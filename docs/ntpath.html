@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module ntpath</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>ntpath</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cagv2fe%5Canaconda3%5Clib%5Cntpath.py">c:\users\agv2fe\anaconda3\lib\ntpath.py</a><br><a href="https://docs.python.org/3.8/library/ntpath">Module Reference</a></font></td></tr></table>
+    <p><tt>Common&nbsp;pathname&nbsp;manipulations,&nbsp;WindowsNT/95&nbsp;version.<br>
+&nbsp;<br>
+Instead&nbsp;of&nbsp;importing&nbsp;this&nbsp;module&nbsp;directly,&nbsp;import&nbsp;os&nbsp;and&nbsp;refer&nbsp;to&nbsp;this<br>
+module&nbsp;as&nbsp;os.path.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="genericpath.html">genericpath</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="stat.html">stat</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-abspath"><strong>abspath</strong></a>(path)</dt><dd><tt>Return&nbsp;the&nbsp;absolute&nbsp;version&nbsp;of&nbsp;a&nbsp;path.</tt></dd></dl>
+ <dl><dt><a name="-basename"><strong>basename</strong></a>(p)</dt><dd><tt>Returns&nbsp;the&nbsp;final&nbsp;component&nbsp;of&nbsp;a&nbsp;pathname</tt></dd></dl>
+ <dl><dt><a name="-commonpath"><strong>commonpath</strong></a>(paths)</dt><dd><tt>Given&nbsp;a&nbsp;sequence&nbsp;of&nbsp;path&nbsp;names,&nbsp;returns&nbsp;the&nbsp;longest&nbsp;common&nbsp;sub-path.</tt></dd></dl>
+ <dl><dt><a name="-commonprefix"><strong>commonprefix</strong></a>(m)</dt><dd><tt>Given&nbsp;a&nbsp;list&nbsp;of&nbsp;pathnames,&nbsp;returns&nbsp;the&nbsp;longest&nbsp;common&nbsp;leading&nbsp;component</tt></dd></dl>
+ <dl><dt><a name="-dirname"><strong>dirname</strong></a>(p)</dt><dd><tt>Returns&nbsp;the&nbsp;directory&nbsp;component&nbsp;of&nbsp;a&nbsp;pathname</tt></dd></dl>
+ <dl><dt><a name="-exists"><strong>exists</strong></a>(path)</dt><dd><tt>Test&nbsp;whether&nbsp;a&nbsp;path&nbsp;exists.&nbsp;&nbsp;Returns&nbsp;False&nbsp;for&nbsp;broken&nbsp;symbolic&nbsp;links</tt></dd></dl>
+ <dl><dt><a name="-expanduser"><strong>expanduser</strong></a>(path)</dt><dd><tt>Expand&nbsp;~&nbsp;and&nbsp;~user&nbsp;constructs.<br>
+&nbsp;<br>
+If&nbsp;user&nbsp;or&nbsp;$HOME&nbsp;is&nbsp;unknown,&nbsp;do&nbsp;nothing.</tt></dd></dl>
+ <dl><dt><a name="-expandvars"><strong>expandvars</strong></a>(path)</dt><dd><tt>Expand&nbsp;shell&nbsp;variables&nbsp;of&nbsp;the&nbsp;forms&nbsp;$var,&nbsp;${var}&nbsp;and&nbsp;%var%.<br>
+&nbsp;<br>
+Unknown&nbsp;variables&nbsp;are&nbsp;left&nbsp;unchanged.</tt></dd></dl>
+ <dl><dt><a name="-getatime"><strong>getatime</strong></a>(filename)</dt><dd><tt>Return&nbsp;the&nbsp;last&nbsp;access&nbsp;time&nbsp;of&nbsp;a&nbsp;file,&nbsp;reported&nbsp;by&nbsp;os.stat().</tt></dd></dl>
+ <dl><dt><a name="-getctime"><strong>getctime</strong></a>(filename)</dt><dd><tt>Return&nbsp;the&nbsp;metadata&nbsp;change&nbsp;time&nbsp;of&nbsp;a&nbsp;file,&nbsp;reported&nbsp;by&nbsp;os.stat().</tt></dd></dl>
+ <dl><dt><a name="-getmtime"><strong>getmtime</strong></a>(filename)</dt><dd><tt>Return&nbsp;the&nbsp;last&nbsp;modification&nbsp;time&nbsp;of&nbsp;a&nbsp;file,&nbsp;reported&nbsp;by&nbsp;os.stat().</tt></dd></dl>
+ <dl><dt><a name="-getsize"><strong>getsize</strong></a>(filename)</dt><dd><tt>Return&nbsp;the&nbsp;size&nbsp;of&nbsp;a&nbsp;file,&nbsp;reported&nbsp;by&nbsp;os.stat().</tt></dd></dl>
+ <dl><dt><a name="-isabs"><strong>isabs</strong></a>(s)</dt><dd><tt>Test&nbsp;whether&nbsp;a&nbsp;path&nbsp;is&nbsp;absolute</tt></dd></dl>
+ <dl><dt><a name="-isdir"><strong>isdir</strong></a>(s)</dt><dd><tt>Return&nbsp;true&nbsp;if&nbsp;the&nbsp;pathname&nbsp;refers&nbsp;to&nbsp;an&nbsp;existing&nbsp;directory.</tt></dd></dl>
+ <dl><dt><a name="-isfile"><strong>isfile</strong></a>(path)</dt><dd><tt>Test&nbsp;whether&nbsp;a&nbsp;path&nbsp;is&nbsp;a&nbsp;regular&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-islink"><strong>islink</strong></a>(path)</dt><dd><tt>Test&nbsp;whether&nbsp;a&nbsp;path&nbsp;is&nbsp;a&nbsp;symbolic&nbsp;link.<br>
+This&nbsp;will&nbsp;always&nbsp;return&nbsp;false&nbsp;for&nbsp;Windows&nbsp;prior&nbsp;to&nbsp;6.0.</tt></dd></dl>
+ <dl><dt><a name="-ismount"><strong>ismount</strong></a>(path)</dt><dd><tt>Test&nbsp;whether&nbsp;a&nbsp;path&nbsp;is&nbsp;a&nbsp;mount&nbsp;point&nbsp;(a&nbsp;drive&nbsp;root,&nbsp;the&nbsp;root&nbsp;of&nbsp;a<br>
+share,&nbsp;or&nbsp;a&nbsp;mounted&nbsp;volume)</tt></dd></dl>
+ <dl><dt><a name="-join"><strong>join</strong></a>(path, *paths)</dt><dd><tt>#&nbsp;Join&nbsp;two&nbsp;(or&nbsp;more)&nbsp;paths.</tt></dd></dl>
+ <dl><dt><a name="-lexists"><strong>lexists</strong></a>(path)</dt><dd><tt>Test&nbsp;whether&nbsp;a&nbsp;path&nbsp;exists.&nbsp;&nbsp;Returns&nbsp;True&nbsp;for&nbsp;broken&nbsp;symbolic&nbsp;links</tt></dd></dl>
+ <dl><dt><a name="-normcase"><strong>normcase</strong></a>(s)</dt><dd><tt>Normalize&nbsp;case&nbsp;of&nbsp;pathname.<br>
+&nbsp;<br>
+Makes&nbsp;all&nbsp;characters&nbsp;lowercase&nbsp;and&nbsp;all&nbsp;slashes&nbsp;into&nbsp;backslashes.</tt></dd></dl>
+ <dl><dt><a name="-normpath"><strong>normpath</strong></a>(path)</dt><dd><tt>Normalize&nbsp;path,&nbsp;eliminating&nbsp;double&nbsp;slashes,&nbsp;etc.</tt></dd></dl>
+ <dl><dt><a name="-realpath"><strong>realpath</strong></a>(path)</dt></dl>
+ <dl><dt><a name="-relpath"><strong>relpath</strong></a>(path, start=None)</dt><dd><tt>Return&nbsp;a&nbsp;relative&nbsp;version&nbsp;of&nbsp;a&nbsp;path</tt></dd></dl>
+ <dl><dt><a name="-samefile"><strong>samefile</strong></a>(f1, f2)</dt><dd><tt>Test&nbsp;whether&nbsp;two&nbsp;pathnames&nbsp;reference&nbsp;the&nbsp;same&nbsp;actual&nbsp;file&nbsp;or&nbsp;directory<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;determined&nbsp;by&nbsp;the&nbsp;device&nbsp;number&nbsp;and&nbsp;i-node&nbsp;number&nbsp;and<br>
+raises&nbsp;an&nbsp;exception&nbsp;if&nbsp;an&nbsp;os.stat()&nbsp;call&nbsp;on&nbsp;either&nbsp;pathname&nbsp;fails.</tt></dd></dl>
+ <dl><dt><a name="-sameopenfile"><strong>sameopenfile</strong></a>(fp1, fp2)</dt><dd><tt>Test&nbsp;whether&nbsp;two&nbsp;open&nbsp;file&nbsp;objects&nbsp;reference&nbsp;the&nbsp;same&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-samestat"><strong>samestat</strong></a>(s1, s2)</dt><dd><tt>Test&nbsp;whether&nbsp;two&nbsp;stat&nbsp;buffers&nbsp;reference&nbsp;the&nbsp;same&nbsp;file</tt></dd></dl>
+ <dl><dt><a name="-split"><strong>split</strong></a>(p)</dt><dd><tt>Split&nbsp;a&nbsp;pathname.<br>
+&nbsp;<br>
+Return&nbsp;tuple&nbsp;(head,&nbsp;tail)&nbsp;where&nbsp;tail&nbsp;is&nbsp;everything&nbsp;after&nbsp;the&nbsp;final&nbsp;slash.<br>
+Either&nbsp;part&nbsp;may&nbsp;be&nbsp;empty.</tt></dd></dl>
+ <dl><dt><a name="-splitdrive"><strong>splitdrive</strong></a>(p)</dt><dd><tt>Split&nbsp;a&nbsp;pathname&nbsp;into&nbsp;drive/UNC&nbsp;sharepoint&nbsp;and&nbsp;relative&nbsp;path&nbsp;specifiers.<br>
+Returns&nbsp;a&nbsp;2-tuple&nbsp;(drive_or_unc,&nbsp;path);&nbsp;either&nbsp;part&nbsp;may&nbsp;be&nbsp;empty.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;assign<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;=&nbsp;<a href="#-splitdrive">splitdrive</a>(p)<br>
+It&nbsp;is&nbsp;always&nbsp;true&nbsp;that:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result[0]&nbsp;+&nbsp;result[1]&nbsp;==&nbsp;p<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;path&nbsp;contained&nbsp;a&nbsp;drive&nbsp;letter,&nbsp;drive_or_unc&nbsp;will&nbsp;contain&nbsp;everything<br>
+up&nbsp;to&nbsp;and&nbsp;including&nbsp;the&nbsp;colon.&nbsp;&nbsp;e.g.&nbsp;<a href="#-splitdrive">splitdrive</a>("c:/dir")&nbsp;returns&nbsp;("c:",&nbsp;"/dir")<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;path&nbsp;contained&nbsp;a&nbsp;UNC&nbsp;path,&nbsp;the&nbsp;drive_or_unc&nbsp;will&nbsp;contain&nbsp;the&nbsp;host&nbsp;name<br>
+and&nbsp;share&nbsp;up&nbsp;to&nbsp;but&nbsp;not&nbsp;including&nbsp;the&nbsp;fourth&nbsp;directory&nbsp;separator&nbsp;character.<br>
+e.g.&nbsp;<a href="#-splitdrive">splitdrive</a>("//host/computer/dir")&nbsp;returns&nbsp;("//host/computer",&nbsp;"/dir")<br>
+&nbsp;<br>
+Paths&nbsp;cannot&nbsp;contain&nbsp;both&nbsp;a&nbsp;drive&nbsp;letter&nbsp;and&nbsp;a&nbsp;UNC&nbsp;path.</tt></dd></dl>
+ <dl><dt><a name="-splitext"><strong>splitext</strong></a>(p)</dt><dd><tt>Split&nbsp;the&nbsp;extension&nbsp;from&nbsp;a&nbsp;pathname.<br>
+&nbsp;<br>
+Extension&nbsp;is&nbsp;everything&nbsp;from&nbsp;the&nbsp;last&nbsp;dot&nbsp;to&nbsp;the&nbsp;end,&nbsp;ignoring<br>
+leading&nbsp;dots.&nbsp;&nbsp;Returns&nbsp;"(root,&nbsp;ext)";&nbsp;ext&nbsp;may&nbsp;be&nbsp;empty.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__all__</strong> = ['normcase', 'isabs', 'join', 'splitdrive', 'split', 'splitext', 'basename', 'dirname', 'commonprefix', 'getsize', 'getmtime', 'getatime', 'getctime', 'islink', 'exists', 'lexists', 'isdir', 'isfile', 'ismount', 'expanduser', ...]<br>
+<strong>altsep</strong> = '/'<br>
+<strong>curdir</strong> = '.'<br>
+<strong>defpath</strong> = r'.;C:\bin'<br>
+<strong>devnull</strong> = 'nul'<br>
+<strong>extsep</strong> = '.'<br>
+<strong>pardir</strong> = '..'<br>
+<strong>pathsep</strong> = ';'<br>
+<strong>sep</strong> = r'\'<br>
+<strong>supports_unicode_filenames</strong> = True</td></tr></table>
+</body></html>

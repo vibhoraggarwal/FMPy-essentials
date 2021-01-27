@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module shutil</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>shutil</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cagv2fe%5Canaconda3%5Clib%5Cshutil.py">c:\users\agv2fe\anaconda3\lib\shutil.py</a><br><a href="https://docs.python.org/3.8/library/shutil">Module Reference</a></font></td></tr></table>
+    <p><tt>Utility&nbsp;functions&nbsp;for&nbsp;copying&nbsp;and&nbsp;archiving&nbsp;files&nbsp;and&nbsp;directory&nbsp;trees.<br>
+&nbsp;<br>
+XXX&nbsp;The&nbsp;functions&nbsp;here&nbsp;don't&nbsp;copy&nbsp;the&nbsp;resource&nbsp;fork&nbsp;or&nbsp;other&nbsp;metadata&nbsp;on&nbsp;Mac.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="collections.html">collections</a><br>
+<a href="errno.html">errno</a><br>
+</td><td width="25%" valign=top><a href="fnmatch.html">fnmatch</a><br>
+<a href="nt.html">nt</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="stat.html">stat</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#OSError">builtins.OSError</a>(<a href="builtins.html#Exception">builtins.Exception</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="shutil.html#Error">Error</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="shutil.html#SameFileError">SameFileError</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="shutil.html#ExecError">ExecError</a>
+</font></dt><dt><font face="helvetica, arial"><a href="shutil.html#SpecialFileError">SpecialFileError</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Error">class <strong>Error</strong></a>(<a href="builtins.html#OSError">builtins.OSError</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Base&nbsp;class&nbsp;for&nbsp;I/O&nbsp;related&nbsp;errors.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="shutil.html#Error">Error</a></dd>
+<dd><a href="builtins.html#OSError">builtins.OSError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><a name="Error-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Error-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="Error-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><a name="Error-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><strong>characters_written</strong></dt>
+</dl>
+<dl><dt><strong>errno</strong></dt>
+<dd><tt>POSIX&nbsp;exception&nbsp;code</tt></dd>
+</dl>
+<dl><dt><strong>filename</strong></dt>
+<dd><tt>exception&nbsp;filename</tt></dd>
+</dl>
+<dl><dt><strong>filename2</strong></dt>
+<dd><tt>second&nbsp;exception&nbsp;filename</tt></dd>
+</dl>
+<dl><dt><strong>strerror</strong></dt>
+<dd><tt>exception&nbsp;strerror</tt></dd>
+</dl>
+<dl><dt><strong>winerror</strong></dt>
+<dd><tt>Win32&nbsp;exception&nbsp;code</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="Error-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="Error-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="Error-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Error-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="Error-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="Error-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt>Exception.<a href="#Error-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ExecError">class <strong>ExecError</strong></a>(<a href="builtins.html#OSError">builtins.OSError</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Raised&nbsp;when&nbsp;a&nbsp;command&nbsp;could&nbsp;not&nbsp;be&nbsp;executed<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="shutil.html#ExecError">ExecError</a></dd>
+<dd><a href="builtins.html#OSError">builtins.OSError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><a name="ExecError-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ExecError-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="ExecError-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><a name="ExecError-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><strong>characters_written</strong></dt>
+</dl>
+<dl><dt><strong>errno</strong></dt>
+<dd><tt>POSIX&nbsp;exception&nbsp;code</tt></dd>
+</dl>
+<dl><dt><strong>filename</strong></dt>
+<dd><tt>exception&nbsp;filename</tt></dd>
+</dl>
+<dl><dt><strong>filename2</strong></dt>
+<dd><tt>second&nbsp;exception&nbsp;filename</tt></dd>
+</dl>
+<dl><dt><strong>strerror</strong></dt>
+<dd><tt>exception&nbsp;strerror</tt></dd>
+</dl>
+<dl><dt><strong>winerror</strong></dt>
+<dd><tt>Win32&nbsp;exception&nbsp;code</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="ExecError-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="ExecError-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="ExecError-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="ExecError-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="ExecError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="ExecError-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt>Exception.<a href="#ExecError-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SameFileError">class <strong>SameFileError</strong></a>(<a href="shutil.html#Error">Error</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Raised&nbsp;when&nbsp;source&nbsp;and&nbsp;destination&nbsp;are&nbsp;the&nbsp;same&nbsp;file.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="shutil.html#SameFileError">SameFileError</a></dd>
+<dd><a href="shutil.html#Error">Error</a></dd>
+<dd><a href="builtins.html#OSError">builtins.OSError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="shutil.html#Error">Error</a>:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><a name="SameFileError-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="SameFileError-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="SameFileError-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><a name="SameFileError-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><strong>characters_written</strong></dt>
+</dl>
+<dl><dt><strong>errno</strong></dt>
+<dd><tt>POSIX&nbsp;exception&nbsp;code</tt></dd>
+</dl>
+<dl><dt><strong>filename</strong></dt>
+<dd><tt>exception&nbsp;filename</tt></dd>
+</dl>
+<dl><dt><strong>filename2</strong></dt>
+<dd><tt>second&nbsp;exception&nbsp;filename</tt></dd>
+</dl>
+<dl><dt><strong>strerror</strong></dt>
+<dd><tt>exception&nbsp;strerror</tt></dd>
+</dl>
+<dl><dt><strong>winerror</strong></dt>
+<dd><tt>Win32&nbsp;exception&nbsp;code</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="SameFileError-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="SameFileError-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="SameFileError-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="SameFileError-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="SameFileError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="SameFileError-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt>Exception.<a href="#SameFileError-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SpecialFileError">class <strong>SpecialFileError</strong></a>(<a href="builtins.html#OSError">builtins.OSError</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Raised&nbsp;when&nbsp;trying&nbsp;to&nbsp;do&nbsp;a&nbsp;kind&nbsp;of&nbsp;operation&nbsp;(e.g.&nbsp;copying)&nbsp;which&nbsp;is<br>
+not&nbsp;supported&nbsp;on&nbsp;a&nbsp;special&nbsp;file&nbsp;(e.g.&nbsp;a&nbsp;named&nbsp;pipe)<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="shutil.html#SpecialFileError">SpecialFileError</a></dd>
+<dd><a href="builtins.html#OSError">builtins.OSError</a></dd>
+<dd><a href="builtins.html#Exception">builtins.Exception</a></dd>
+<dd><a href="builtins.html#BaseException">builtins.BaseException</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><a name="SpecialFileError-__init__"><strong>__init__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="SpecialFileError-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="SpecialFileError-__str__"><strong>__str__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><a name="SpecialFileError-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#OSError">builtins.OSError</a>:<br>
+<dl><dt><strong>characters_written</strong></dt>
+</dl>
+<dl><dt><strong>errno</strong></dt>
+<dd><tt>POSIX&nbsp;exception&nbsp;code</tt></dd>
+</dl>
+<dl><dt><strong>filename</strong></dt>
+<dd><tt>exception&nbsp;filename</tt></dd>
+</dl>
+<dl><dt><strong>filename2</strong></dt>
+<dd><tt>second&nbsp;exception&nbsp;filename</tt></dd>
+</dl>
+<dl><dt><strong>strerror</strong></dt>
+<dd><tt>exception&nbsp;strerror</tt></dd>
+</dl>
+<dl><dt><strong>winerror</strong></dt>
+<dd><tt>Win32&nbsp;exception&nbsp;code</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><a name="SpecialFileError-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="SpecialFileError-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="SpecialFileError-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="SpecialFileError-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="SpecialFileError-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<dl><dt><a name="SpecialFileError-with_traceback"><strong>with_traceback</strong></a>(...)</dt><dd><tt>Exception.<a href="#SpecialFileError-with_traceback">with_traceback</a>(tb)&nbsp;--<br>
+set&nbsp;self.<strong>__traceback__</strong>&nbsp;to&nbsp;tb&nbsp;and&nbsp;return&nbsp;self.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="builtins.html#BaseException">builtins.BaseException</a>:<br>
+<dl><dt><strong>__cause__</strong></dt>
+<dd><tt>exception&nbsp;cause</tt></dd>
+</dl>
+<dl><dt><strong>__context__</strong></dt>
+<dd><tt>exception&nbsp;context</tt></dd>
+</dl>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>__suppress_context__</strong></dt>
+</dl>
+<dl><dt><strong>__traceback__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-chown"><strong>chown</strong></a>(path, user=None, group=None)</dt><dd><tt>Change&nbsp;owner&nbsp;user&nbsp;and&nbsp;group&nbsp;of&nbsp;the&nbsp;given&nbsp;path.<br>
+&nbsp;<br>
+user&nbsp;and&nbsp;group&nbsp;can&nbsp;be&nbsp;the&nbsp;uid/gid&nbsp;or&nbsp;the&nbsp;user/group&nbsp;names,&nbsp;and&nbsp;in&nbsp;that&nbsp;case,<br>
+they&nbsp;are&nbsp;converted&nbsp;to&nbsp;their&nbsp;respective&nbsp;uid/gid.</tt></dd></dl>
+ <dl><dt><a name="-copy"><strong>copy</strong></a>(src, dst, *, follow_symlinks=True)</dt><dd><tt>Copy&nbsp;data&nbsp;and&nbsp;mode&nbsp;bits&nbsp;("cp&nbsp;src&nbsp;dst").&nbsp;Return&nbsp;the&nbsp;file's&nbsp;destination.<br>
+&nbsp;<br>
+The&nbsp;destination&nbsp;may&nbsp;be&nbsp;a&nbsp;directory.<br>
+&nbsp;<br>
+If&nbsp;follow_symlinks&nbsp;is&nbsp;false,&nbsp;symlinks&nbsp;won't&nbsp;be&nbsp;followed.&nbsp;This<br>
+resembles&nbsp;GNU's&nbsp;"cp&nbsp;-P&nbsp;src&nbsp;dst".<br>
+&nbsp;<br>
+If&nbsp;source&nbsp;and&nbsp;destination&nbsp;are&nbsp;the&nbsp;same&nbsp;file,&nbsp;a&nbsp;<a href="#SameFileError">SameFileError</a>&nbsp;will&nbsp;be<br>
+raised.</tt></dd></dl>
+ <dl><dt><a name="-copy2"><strong>copy2</strong></a>(src, dst, *, follow_symlinks=True)</dt><dd><tt>Copy&nbsp;data&nbsp;and&nbsp;metadata.&nbsp;Return&nbsp;the&nbsp;file's&nbsp;destination.<br>
+&nbsp;<br>
+Metadata&nbsp;is&nbsp;copied&nbsp;with&nbsp;<a href="#-copystat">copystat</a>().&nbsp;Please&nbsp;see&nbsp;the&nbsp;copystat&nbsp;function<br>
+for&nbsp;more&nbsp;information.<br>
+&nbsp;<br>
+The&nbsp;destination&nbsp;may&nbsp;be&nbsp;a&nbsp;directory.<br>
+&nbsp;<br>
+If&nbsp;follow_symlinks&nbsp;is&nbsp;false,&nbsp;symlinks&nbsp;won't&nbsp;be&nbsp;followed.&nbsp;This<br>
+resembles&nbsp;GNU's&nbsp;"cp&nbsp;-P&nbsp;src&nbsp;dst".</tt></dd></dl>
+ <dl><dt><a name="-copyfile"><strong>copyfile</strong></a>(src, dst, *, follow_symlinks=True)</dt><dd><tt>Copy&nbsp;data&nbsp;from&nbsp;src&nbsp;to&nbsp;dst&nbsp;in&nbsp;the&nbsp;most&nbsp;efficient&nbsp;way&nbsp;possible.<br>
+&nbsp;<br>
+If&nbsp;follow_symlinks&nbsp;is&nbsp;not&nbsp;set&nbsp;and&nbsp;src&nbsp;is&nbsp;a&nbsp;symbolic&nbsp;link,&nbsp;a&nbsp;new<br>
+symlink&nbsp;will&nbsp;be&nbsp;created&nbsp;instead&nbsp;of&nbsp;copying&nbsp;the&nbsp;file&nbsp;it&nbsp;points&nbsp;to.</tt></dd></dl>
+ <dl><dt><a name="-copyfileobj"><strong>copyfileobj</strong></a>(fsrc, fdst, length=0)</dt><dd><tt>copy&nbsp;data&nbsp;from&nbsp;file-like&nbsp;object&nbsp;fsrc&nbsp;to&nbsp;file-like&nbsp;object&nbsp;fdst</tt></dd></dl>
+ <dl><dt><a name="-copymode"><strong>copymode</strong></a>(src, dst, *, follow_symlinks=True)</dt><dd><tt>Copy&nbsp;mode&nbsp;bits&nbsp;from&nbsp;src&nbsp;to&nbsp;dst.<br>
+&nbsp;<br>
+If&nbsp;follow_symlinks&nbsp;is&nbsp;not&nbsp;set,&nbsp;symlinks&nbsp;aren't&nbsp;followed&nbsp;if&nbsp;and&nbsp;only<br>
+if&nbsp;both&nbsp;`src`&nbsp;and&nbsp;`dst`&nbsp;are&nbsp;symlinks.&nbsp;&nbsp;If&nbsp;`lchmod`&nbsp;isn't&nbsp;available<br>
+(e.g.&nbsp;Linux)&nbsp;this&nbsp;method&nbsp;does&nbsp;nothing.</tt></dd></dl>
+ <dl><dt><a name="-copystat"><strong>copystat</strong></a>(src, dst, *, follow_symlinks=True)</dt><dd><tt>Copy&nbsp;file&nbsp;metadata<br>
+&nbsp;<br>
+Copy&nbsp;the&nbsp;permission&nbsp;bits,&nbsp;last&nbsp;access&nbsp;time,&nbsp;last&nbsp;modification&nbsp;time,&nbsp;and<br>
+flags&nbsp;from&nbsp;`src`&nbsp;to&nbsp;`dst`.&nbsp;On&nbsp;Linux,&nbsp;<a href="#-copystat">copystat</a>()&nbsp;also&nbsp;copies&nbsp;the&nbsp;"extended<br>
+attributes"&nbsp;where&nbsp;possible.&nbsp;The&nbsp;file&nbsp;contents,&nbsp;owner,&nbsp;and&nbsp;group&nbsp;are<br>
+unaffected.&nbsp;`src`&nbsp;and&nbsp;`dst`&nbsp;are&nbsp;path-like&nbsp;objects&nbsp;or&nbsp;path&nbsp;names&nbsp;given&nbsp;as<br>
+strings.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;optional&nbsp;flag&nbsp;`follow_symlinks`&nbsp;is&nbsp;not&nbsp;set,&nbsp;symlinks&nbsp;aren't<br>
+followed&nbsp;if&nbsp;and&nbsp;only&nbsp;if&nbsp;both&nbsp;`src`&nbsp;and&nbsp;`dst`&nbsp;are&nbsp;symlinks.</tt></dd></dl>
+ <dl><dt><a name="-copytree"><strong>copytree</strong></a>(src, dst, symlinks=False, ignore=None, copy_function=&lt;function copy2 at 0x0000018B8E11D280&gt;, ignore_dangling_symlinks=False, dirs_exist_ok=False)</dt><dd><tt>Recursively&nbsp;copy&nbsp;a&nbsp;directory&nbsp;tree&nbsp;and&nbsp;return&nbsp;the&nbsp;destination&nbsp;directory.<br>
+&nbsp;<br>
+dirs_exist_ok&nbsp;dictates&nbsp;whether&nbsp;to&nbsp;raise&nbsp;an&nbsp;exception&nbsp;in&nbsp;case&nbsp;dst&nbsp;or&nbsp;any<br>
+missing&nbsp;parent&nbsp;directory&nbsp;already&nbsp;exists.<br>
+&nbsp;<br>
+If&nbsp;exception(s)&nbsp;occur,&nbsp;an&nbsp;<a href="#Error">Error</a>&nbsp;is&nbsp;raised&nbsp;with&nbsp;a&nbsp;list&nbsp;of&nbsp;reasons.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;optional&nbsp;symlinks&nbsp;flag&nbsp;is&nbsp;true,&nbsp;symbolic&nbsp;links&nbsp;in&nbsp;the<br>
+source&nbsp;tree&nbsp;result&nbsp;in&nbsp;symbolic&nbsp;links&nbsp;in&nbsp;the&nbsp;destination&nbsp;tree;&nbsp;if<br>
+it&nbsp;is&nbsp;false,&nbsp;the&nbsp;contents&nbsp;of&nbsp;the&nbsp;files&nbsp;pointed&nbsp;to&nbsp;by&nbsp;symbolic<br>
+links&nbsp;are&nbsp;copied.&nbsp;If&nbsp;the&nbsp;file&nbsp;pointed&nbsp;by&nbsp;the&nbsp;symlink&nbsp;doesn't<br>
+exist,&nbsp;an&nbsp;exception&nbsp;will&nbsp;be&nbsp;added&nbsp;in&nbsp;the&nbsp;list&nbsp;of&nbsp;errors&nbsp;raised&nbsp;in<br>
+an&nbsp;<a href="#Error">Error</a>&nbsp;exception&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;copy&nbsp;process.<br>
+&nbsp;<br>
+You&nbsp;can&nbsp;set&nbsp;the&nbsp;optional&nbsp;ignore_dangling_symlinks&nbsp;flag&nbsp;to&nbsp;true&nbsp;if&nbsp;you<br>
+want&nbsp;to&nbsp;silence&nbsp;this&nbsp;exception.&nbsp;Notice&nbsp;that&nbsp;this&nbsp;has&nbsp;no&nbsp;effect&nbsp;on<br>
+platforms&nbsp;that&nbsp;don't&nbsp;support&nbsp;os.symlink.<br>
+&nbsp;<br>
+The&nbsp;optional&nbsp;ignore&nbsp;argument&nbsp;is&nbsp;a&nbsp;callable.&nbsp;If&nbsp;given,&nbsp;it<br>
+is&nbsp;called&nbsp;with&nbsp;the&nbsp;`src`&nbsp;parameter,&nbsp;which&nbsp;is&nbsp;the&nbsp;directory<br>
+being&nbsp;visited&nbsp;by&nbsp;<a href="#-copytree">copytree</a>(),&nbsp;and&nbsp;`names`&nbsp;which&nbsp;is&nbsp;the&nbsp;list&nbsp;of<br>
+`src`&nbsp;contents,&nbsp;as&nbsp;returned&nbsp;by&nbsp;os.listdir():<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callable(src,&nbsp;names)&nbsp;-&gt;&nbsp;ignored_names<br>
+&nbsp;<br>
+Since&nbsp;<a href="#-copytree">copytree</a>()&nbsp;is&nbsp;called&nbsp;recursively,&nbsp;the&nbsp;callable&nbsp;will&nbsp;be<br>
+called&nbsp;once&nbsp;for&nbsp;each&nbsp;directory&nbsp;that&nbsp;is&nbsp;copied.&nbsp;It&nbsp;returns&nbsp;a<br>
+list&nbsp;of&nbsp;names&nbsp;relative&nbsp;to&nbsp;the&nbsp;`src`&nbsp;directory&nbsp;that&nbsp;should<br>
+not&nbsp;be&nbsp;copied.<br>
+&nbsp;<br>
+The&nbsp;optional&nbsp;copy_function&nbsp;argument&nbsp;is&nbsp;a&nbsp;callable&nbsp;that&nbsp;will&nbsp;be&nbsp;used<br>
+to&nbsp;copy&nbsp;each&nbsp;file.&nbsp;It&nbsp;will&nbsp;be&nbsp;called&nbsp;with&nbsp;the&nbsp;source&nbsp;path&nbsp;and&nbsp;the<br>
+destination&nbsp;path&nbsp;as&nbsp;arguments.&nbsp;By&nbsp;default,&nbsp;<a href="#-copy2">copy2</a>()&nbsp;is&nbsp;used,&nbsp;but&nbsp;any<br>
+function&nbsp;that&nbsp;supports&nbsp;the&nbsp;same&nbsp;signature&nbsp;(like&nbsp;<a href="#-copy">copy</a>())&nbsp;can&nbsp;be&nbsp;used.</tt></dd></dl>
+ <dl><dt><a name="-disk_usage"><strong>disk_usage</strong></a>(path)</dt><dd><tt>Return&nbsp;disk&nbsp;usage&nbsp;statistics&nbsp;about&nbsp;the&nbsp;given&nbsp;path.<br>
+&nbsp;<br>
+Returned&nbsp;values&nbsp;is&nbsp;a&nbsp;named&nbsp;tuple&nbsp;with&nbsp;attributes&nbsp;'total',&nbsp;'used'&nbsp;and<br>
+'free',&nbsp;which&nbsp;are&nbsp;the&nbsp;amount&nbsp;of&nbsp;total,&nbsp;used&nbsp;and&nbsp;free&nbsp;space,&nbsp;in&nbsp;bytes.</tt></dd></dl>
+ <dl><dt><a name="-get_archive_formats"><strong>get_archive_formats</strong></a>()</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;supported&nbsp;formats&nbsp;for&nbsp;archiving&nbsp;and&nbsp;unarchiving.<br>
+&nbsp;<br>
+Each&nbsp;element&nbsp;of&nbsp;the&nbsp;returned&nbsp;sequence&nbsp;is&nbsp;a&nbsp;tuple&nbsp;(name,&nbsp;description)</tt></dd></dl>
+ <dl><dt><a name="-get_terminal_size"><strong>get_terminal_size</strong></a>(fallback=(80, 24))</dt><dd><tt>Get&nbsp;the&nbsp;size&nbsp;of&nbsp;the&nbsp;terminal&nbsp;window.<br>
+&nbsp;<br>
+For&nbsp;each&nbsp;of&nbsp;the&nbsp;two&nbsp;dimensions,&nbsp;the&nbsp;environment&nbsp;variable,&nbsp;COLUMNS<br>
+and&nbsp;LINES&nbsp;respectively,&nbsp;is&nbsp;checked.&nbsp;If&nbsp;the&nbsp;variable&nbsp;is&nbsp;defined&nbsp;and<br>
+the&nbsp;value&nbsp;is&nbsp;a&nbsp;positive&nbsp;integer,&nbsp;it&nbsp;is&nbsp;used.<br>
+&nbsp;<br>
+When&nbsp;COLUMNS&nbsp;or&nbsp;LINES&nbsp;is&nbsp;not&nbsp;defined,&nbsp;which&nbsp;is&nbsp;the&nbsp;common&nbsp;case,<br>
+the&nbsp;terminal&nbsp;connected&nbsp;to&nbsp;sys.__stdout__&nbsp;is&nbsp;queried<br>
+by&nbsp;invoking&nbsp;os.get_terminal_size.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;terminal&nbsp;size&nbsp;cannot&nbsp;be&nbsp;successfully&nbsp;queried,&nbsp;either&nbsp;because<br>
+the&nbsp;system&nbsp;doesn't&nbsp;support&nbsp;querying,&nbsp;or&nbsp;because&nbsp;we&nbsp;are&nbsp;not<br>
+connected&nbsp;to&nbsp;a&nbsp;terminal,&nbsp;the&nbsp;value&nbsp;given&nbsp;in&nbsp;fallback&nbsp;parameter<br>
+is&nbsp;used.&nbsp;Fallback&nbsp;defaults&nbsp;to&nbsp;(80,&nbsp;24)&nbsp;which&nbsp;is&nbsp;the&nbsp;default<br>
+size&nbsp;used&nbsp;by&nbsp;many&nbsp;terminal&nbsp;emulators.<br>
+&nbsp;<br>
+The&nbsp;value&nbsp;returned&nbsp;is&nbsp;a&nbsp;named&nbsp;tuple&nbsp;of&nbsp;type&nbsp;os.terminal_size.</tt></dd></dl>
+ <dl><dt><a name="-get_unpack_formats"><strong>get_unpack_formats</strong></a>()</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;supported&nbsp;formats&nbsp;for&nbsp;unpacking.<br>
+&nbsp;<br>
+Each&nbsp;element&nbsp;of&nbsp;the&nbsp;returned&nbsp;sequence&nbsp;is&nbsp;a&nbsp;tuple<br>
+(name,&nbsp;extensions,&nbsp;description)</tt></dd></dl>
+ <dl><dt><a name="-ignore_patterns"><strong>ignore_patterns</strong></a>(*patterns)</dt><dd><tt>Function&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;as&nbsp;<a href="#-copytree">copytree</a>()&nbsp;ignore&nbsp;parameter.<br>
+&nbsp;<br>
+Patterns&nbsp;is&nbsp;a&nbsp;sequence&nbsp;of&nbsp;glob-style&nbsp;patterns<br>
+that&nbsp;are&nbsp;used&nbsp;to&nbsp;exclude&nbsp;files</tt></dd></dl>
+ <dl><dt><a name="-make_archive"><strong>make_archive</strong></a>(base_name, format, root_dir=None, base_dir=None, verbose=0, dry_run=0, owner=None, group=None, logger=None)</dt><dd><tt>Create&nbsp;an&nbsp;archive&nbsp;file&nbsp;(eg.&nbsp;zip&nbsp;or&nbsp;tar).<br>
+&nbsp;<br>
+'base_name'&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;file&nbsp;to&nbsp;create,&nbsp;minus&nbsp;any&nbsp;format-specific<br>
+extension;&nbsp;'format'&nbsp;is&nbsp;the&nbsp;archive&nbsp;format:&nbsp;one&nbsp;of&nbsp;"zip",&nbsp;"tar",&nbsp;"gztar",<br>
+"bztar",&nbsp;or&nbsp;"xztar".&nbsp;&nbsp;Or&nbsp;any&nbsp;other&nbsp;registered&nbsp;format.<br>
+&nbsp;<br>
+'root_dir'&nbsp;is&nbsp;a&nbsp;directory&nbsp;that&nbsp;will&nbsp;be&nbsp;the&nbsp;root&nbsp;directory&nbsp;of&nbsp;the<br>
+archive;&nbsp;ie.&nbsp;we&nbsp;typically&nbsp;chdir&nbsp;into&nbsp;'root_dir'&nbsp;before&nbsp;creating&nbsp;the<br>
+archive.&nbsp;&nbsp;'base_dir'&nbsp;is&nbsp;the&nbsp;directory&nbsp;where&nbsp;we&nbsp;start&nbsp;archiving&nbsp;from;<br>
+ie.&nbsp;'base_dir'&nbsp;will&nbsp;be&nbsp;the&nbsp;common&nbsp;prefix&nbsp;of&nbsp;all&nbsp;files&nbsp;and<br>
+directories&nbsp;in&nbsp;the&nbsp;archive.&nbsp;&nbsp;'root_dir'&nbsp;and&nbsp;'base_dir'&nbsp;both&nbsp;default<br>
+to&nbsp;the&nbsp;current&nbsp;directory.&nbsp;&nbsp;Returns&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;archive&nbsp;file.<br>
+&nbsp;<br>
+'owner'&nbsp;and&nbsp;'group'&nbsp;are&nbsp;used&nbsp;when&nbsp;creating&nbsp;a&nbsp;tar&nbsp;archive.&nbsp;By&nbsp;default,<br>
+uses&nbsp;the&nbsp;current&nbsp;owner&nbsp;and&nbsp;group.</tt></dd></dl>
+ <dl><dt><a name="-move"><strong>move</strong></a>(src, dst, copy_function=&lt;function copy2 at 0x0000018B8E11D280&gt;)</dt><dd><tt>Recursively&nbsp;move&nbsp;a&nbsp;file&nbsp;or&nbsp;directory&nbsp;to&nbsp;another&nbsp;location.&nbsp;This&nbsp;is<br>
+similar&nbsp;to&nbsp;the&nbsp;Unix&nbsp;"mv"&nbsp;command.&nbsp;Return&nbsp;the&nbsp;file&nbsp;or&nbsp;directory's<br>
+destination.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;destination&nbsp;is&nbsp;a&nbsp;directory&nbsp;or&nbsp;a&nbsp;symlink&nbsp;to&nbsp;a&nbsp;directory,&nbsp;the&nbsp;source<br>
+is&nbsp;moved&nbsp;inside&nbsp;the&nbsp;directory.&nbsp;The&nbsp;destination&nbsp;path&nbsp;must&nbsp;not&nbsp;already<br>
+exist.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;destination&nbsp;already&nbsp;exists&nbsp;but&nbsp;is&nbsp;not&nbsp;a&nbsp;directory,&nbsp;it&nbsp;may&nbsp;be<br>
+overwritten&nbsp;depending&nbsp;on&nbsp;os.rename()&nbsp;semantics.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;destination&nbsp;is&nbsp;on&nbsp;our&nbsp;current&nbsp;filesystem,&nbsp;then&nbsp;rename()&nbsp;is&nbsp;used.<br>
+Otherwise,&nbsp;src&nbsp;is&nbsp;copied&nbsp;to&nbsp;the&nbsp;destination&nbsp;and&nbsp;then&nbsp;removed.&nbsp;Symlinks&nbsp;are<br>
+recreated&nbsp;under&nbsp;the&nbsp;new&nbsp;name&nbsp;if&nbsp;os.rename()&nbsp;fails&nbsp;because&nbsp;of&nbsp;cross<br>
+filesystem&nbsp;renames.<br>
+&nbsp;<br>
+The&nbsp;optional&nbsp;`copy_function`&nbsp;argument&nbsp;is&nbsp;a&nbsp;callable&nbsp;that&nbsp;will&nbsp;be&nbsp;used<br>
+to&nbsp;copy&nbsp;the&nbsp;source&nbsp;or&nbsp;it&nbsp;will&nbsp;be&nbsp;delegated&nbsp;to&nbsp;`copytree`.<br>
+By&nbsp;default,&nbsp;<a href="#-copy2">copy2</a>()&nbsp;is&nbsp;used,&nbsp;but&nbsp;any&nbsp;function&nbsp;that&nbsp;supports&nbsp;the&nbsp;same<br>
+signature&nbsp;(like&nbsp;<a href="#-copy">copy</a>())&nbsp;can&nbsp;be&nbsp;used.<br>
+&nbsp;<br>
+A&nbsp;lot&nbsp;more&nbsp;could&nbsp;be&nbsp;done&nbsp;here...&nbsp;&nbsp;A&nbsp;look&nbsp;at&nbsp;a&nbsp;mv.c&nbsp;shows&nbsp;a&nbsp;lot&nbsp;of<br>
+the&nbsp;issues&nbsp;this&nbsp;implementation&nbsp;glosses&nbsp;over.</tt></dd></dl>
+ <dl><dt><a name="-register_archive_format"><strong>register_archive_format</strong></a>(name, function, extra_args=None, description='')</dt><dd><tt>Registers&nbsp;an&nbsp;archive&nbsp;format.<br>
+&nbsp;<br>
+name&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;format.&nbsp;function&nbsp;is&nbsp;the&nbsp;callable&nbsp;that&nbsp;will&nbsp;be<br>
+used&nbsp;to&nbsp;create&nbsp;archives.&nbsp;If&nbsp;provided,&nbsp;extra_args&nbsp;is&nbsp;a&nbsp;sequence&nbsp;of<br>
+(name,&nbsp;value)&nbsp;tuples&nbsp;that&nbsp;will&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments&nbsp;to&nbsp;the&nbsp;callable.<br>
+description&nbsp;can&nbsp;be&nbsp;provided&nbsp;to&nbsp;describe&nbsp;the&nbsp;format,&nbsp;and&nbsp;will&nbsp;be&nbsp;returned<br>
+by&nbsp;the&nbsp;<a href="#-get_archive_formats">get_archive_formats</a>()&nbsp;function.</tt></dd></dl>
+ <dl><dt><a name="-register_unpack_format"><strong>register_unpack_format</strong></a>(name, extensions, function, extra_args=None, description='')</dt><dd><tt>Registers&nbsp;an&nbsp;unpack&nbsp;format.<br>
+&nbsp;<br>
+`name`&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;format.&nbsp;`extensions`&nbsp;is&nbsp;a&nbsp;list&nbsp;of&nbsp;extensions<br>
+corresponding&nbsp;to&nbsp;the&nbsp;format.<br>
+&nbsp;<br>
+`function`&nbsp;is&nbsp;the&nbsp;callable&nbsp;that&nbsp;will&nbsp;be<br>
+used&nbsp;to&nbsp;unpack&nbsp;archives.&nbsp;The&nbsp;callable&nbsp;will&nbsp;receive&nbsp;archives&nbsp;to&nbsp;unpack.<br>
+If&nbsp;it's&nbsp;unable&nbsp;to&nbsp;handle&nbsp;an&nbsp;archive,&nbsp;it&nbsp;needs&nbsp;to&nbsp;raise&nbsp;a&nbsp;ReadError<br>
+exception.<br>
+&nbsp;<br>
+If&nbsp;provided,&nbsp;`extra_args`&nbsp;is&nbsp;a&nbsp;sequence&nbsp;of<br>
+(name,&nbsp;value)&nbsp;tuples&nbsp;that&nbsp;will&nbsp;be&nbsp;passed&nbsp;as&nbsp;arguments&nbsp;to&nbsp;the&nbsp;callable.<br>
+description&nbsp;can&nbsp;be&nbsp;provided&nbsp;to&nbsp;describe&nbsp;the&nbsp;format,&nbsp;and&nbsp;will&nbsp;be&nbsp;returned<br>
+by&nbsp;the&nbsp;<a href="#-get_unpack_formats">get_unpack_formats</a>()&nbsp;function.</tt></dd></dl>
+ <dl><dt><a name="-rmtree"><strong>rmtree</strong></a>(path, ignore_errors=False, onerror=None)</dt><dd><tt>Recursively&nbsp;delete&nbsp;a&nbsp;directory&nbsp;tree.<br>
+&nbsp;<br>
+If&nbsp;ignore_errors&nbsp;is&nbsp;set,&nbsp;errors&nbsp;are&nbsp;ignored;&nbsp;otherwise,&nbsp;if&nbsp;onerror<br>
+is&nbsp;set,&nbsp;it&nbsp;is&nbsp;called&nbsp;to&nbsp;handle&nbsp;the&nbsp;error&nbsp;with&nbsp;arguments&nbsp;(func,<br>
+path,&nbsp;exc_info)&nbsp;where&nbsp;func&nbsp;is&nbsp;platform&nbsp;and&nbsp;implementation&nbsp;dependent;<br>
+path&nbsp;is&nbsp;the&nbsp;argument&nbsp;to&nbsp;that&nbsp;function&nbsp;that&nbsp;caused&nbsp;it&nbsp;to&nbsp;fail;&nbsp;and<br>
+exc_info&nbsp;is&nbsp;a&nbsp;tuple&nbsp;returned&nbsp;by&nbsp;sys.exc_info().&nbsp;&nbsp;If&nbsp;ignore_errors<br>
+is&nbsp;false&nbsp;and&nbsp;onerror&nbsp;is&nbsp;None,&nbsp;an&nbsp;exception&nbsp;is&nbsp;raised.</tt></dd></dl>
+ <dl><dt><a name="-unpack_archive"><strong>unpack_archive</strong></a>(filename, extract_dir=None, format=None)</dt><dd><tt>Unpack&nbsp;an&nbsp;archive.<br>
+&nbsp;<br>
+`filename`&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;archive.<br>
+&nbsp;<br>
+`extract_dir`&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;target&nbsp;directory,&nbsp;where&nbsp;the&nbsp;archive<br>
+is&nbsp;unpacked.&nbsp;If&nbsp;not&nbsp;provided,&nbsp;the&nbsp;current&nbsp;working&nbsp;directory&nbsp;is&nbsp;used.<br>
+&nbsp;<br>
+`format`&nbsp;is&nbsp;the&nbsp;archive&nbsp;format:&nbsp;one&nbsp;of&nbsp;"zip",&nbsp;"tar",&nbsp;"gztar",&nbsp;"bztar",<br>
+or&nbsp;"xztar".&nbsp;&nbsp;Or&nbsp;any&nbsp;other&nbsp;registered&nbsp;format.&nbsp;&nbsp;If&nbsp;not&nbsp;provided,<br>
+unpack_archive&nbsp;will&nbsp;use&nbsp;the&nbsp;filename&nbsp;extension&nbsp;and&nbsp;see&nbsp;if&nbsp;an&nbsp;unpacker<br>
+was&nbsp;registered&nbsp;for&nbsp;that&nbsp;extension.<br>
+&nbsp;<br>
+In&nbsp;case&nbsp;none&nbsp;is&nbsp;found,&nbsp;a&nbsp;ValueError&nbsp;is&nbsp;raised.</tt></dd></dl>
+ <dl><dt><a name="-unregister_archive_format"><strong>unregister_archive_format</strong></a>(name)</dt></dl>
+ <dl><dt><a name="-unregister_unpack_format"><strong>unregister_unpack_format</strong></a>(name)</dt><dd><tt>Removes&nbsp;the&nbsp;pack&nbsp;format&nbsp;from&nbsp;the&nbsp;registry.</tt></dd></dl>
+ <dl><dt><a name="-which"><strong>which</strong></a>(cmd, mode=1, path=None)</dt><dd><tt>Given&nbsp;a&nbsp;command,&nbsp;mode,&nbsp;and&nbsp;a&nbsp;PATH&nbsp;string,&nbsp;return&nbsp;the&nbsp;path&nbsp;which<br>
+conforms&nbsp;to&nbsp;the&nbsp;given&nbsp;mode&nbsp;on&nbsp;the&nbsp;PATH,&nbsp;or&nbsp;None&nbsp;if&nbsp;there&nbsp;is&nbsp;no&nbsp;such<br>
+file.<br>
+&nbsp;<br>
+`mode`&nbsp;defaults&nbsp;to&nbsp;os.F_OK&nbsp;|&nbsp;os.X_OK.&nbsp;`path`&nbsp;defaults&nbsp;to&nbsp;the&nbsp;result<br>
+of&nbsp;os.environ.get("PATH"),&nbsp;or&nbsp;can&nbsp;be&nbsp;overridden&nbsp;with&nbsp;a&nbsp;custom&nbsp;search<br>
+path.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>__all__</strong> = ['copyfileobj', 'copyfile', 'copymode', 'copystat', 'copy', 'copy2', 'copytree', 'move', 'rmtree', 'Error', 'SpecialFileError', 'ExecError', 'make_archive', 'get_archive_formats', 'register_archive_format', 'unregister_archive_format', 'get_unpack_formats', 'register_unpack_format', 'unregister_unpack_format', 'unpack_archive', ...]</td></tr></table>
+</body></html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package fmpy.sundials</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="fmpy.html"><font color="#ffffff">fmpy</font></a>.sundials</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cagv2fe%5Canaconda3%5Clib%5Csite-packages%5Cfmpy%5Csundials%5C__init__.py">c:\users\agv2fe\anaconda3\lib\site-packages\fmpy\sundials\__init__.py</a></font></td></tr></table>
+    <p><tt>Interface&nbsp;to&nbsp;the&nbsp;SUNDIALS&nbsp;libraries</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="fmpy.sundials.cvode.html">cvode</a><br>
+<a href="fmpy.sundials.cvode_ls.html">cvode_ls</a><br>
+<a href="fmpy.sundials.libraries.html">libraries</a><br>
+</td><td width="25%" valign=top><a href="fmpy.sundials.nvector_serial.html">nvector_serial</a><br>
+<a href="fmpy.sundials.sundials_linearsolver.html">sundials_linearsolver</a><br>
+<a href="fmpy.sundials.sundials_matrix.html">sundials_matrix</a><br>
+</td><td width="25%" valign=top><a href="fmpy.sundials.sundials_nvector.html">sundials_nvector</a><br>
+<a href="fmpy.sundials.sundials_types.html">sundials_types</a><br>
+<a href="fmpy.sundials.sundials_version.html">sundials_version</a><br>
+</td><td width="25%" valign=top><a href="fmpy.sundials.sunlinsol_dense.html">sunlinsol_dense</a><br>
+<a href="fmpy.sundials.sunmatrix_dense.html">sunmatrix_dense</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="fmpy.sundials.html#CVodeSolver">CVodeSolver</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CVodeSolver">class <strong>CVodeSolver</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#CVodeSolver">CVodeSolver</a>(nx,&nbsp;nz,&nbsp;get_x,&nbsp;set_x,&nbsp;get_dx,&nbsp;get_z,&nbsp;set_time,&nbsp;input,&nbsp;startTime,&nbsp;maxStep=inf,&nbsp;relativeTolerance=1e-05,&nbsp;maxNumSteps=500)<br>
+&nbsp;<br>
+Interface&nbsp;to&nbsp;the&nbsp;CVode&nbsp;solver<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="CVodeSolver-__del__"><strong>__del__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="CVodeSolver-__init__"><strong>__init__</strong></a>(self, nx, nz, get_x, set_x, get_dx, get_z, set_time, input, startTime, maxStep=inf, relativeTolerance=1e-05, maxNumSteps=500)</dt><dd><tt>Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;of&nbsp;continuous&nbsp;states<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;of&nbsp;event&nbsp;indicators<br>
+&nbsp;&nbsp;&nbsp;&nbsp;get_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback&nbsp;function&nbsp;to&nbsp;get&nbsp;the&nbsp;continuous&nbsp;states<br>
+&nbsp;&nbsp;&nbsp;&nbsp;set_x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback&nbsp;function&nbsp;to&nbsp;set&nbsp;the&nbsp;continuous&nbsp;states<br>
+&nbsp;&nbsp;&nbsp;&nbsp;get_dx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback&nbsp;function&nbsp;to&nbsp;get&nbsp;the&nbsp;derivatives<br>
+&nbsp;&nbsp;&nbsp;&nbsp;get_z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback&nbsp;function&nbsp;to&nbsp;get&nbsp;the&nbsp;event&nbsp;indicators<br>
+&nbsp;&nbsp;&nbsp;&nbsp;set_time&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;callback&nbsp;function&nbsp;to&nbsp;set&nbsp;the&nbsp;time<br>
+&nbsp;&nbsp;&nbsp;&nbsp;startTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start&nbsp;time&nbsp;for&nbsp;the&nbsp;integration<br>
+&nbsp;&nbsp;&nbsp;&nbsp;maxStep&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maximum&nbsp;absolute&nbsp;value&nbsp;of&nbsp;step&nbsp;size&nbsp;allowed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;relativeTolerance&nbsp;&nbsp;&nbsp;relative&nbsp;tolerance<br>
+&nbsp;&nbsp;&nbsp;&nbsp;maxNumSteps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maximum&nbsp;number&nbsp;of&nbsp;internal&nbsp;steps&nbsp;to&nbsp;be&nbsp;taken&nbsp;by&nbsp;the&nbsp;solver&nbsp;in&nbsp;its&nbsp;attempt&nbsp;to&nbsp;reach&nbsp;tout</tt></dd></dl>
+
+<dl><dt><a name="CVodeSolver-ehfun"><strong>ehfun</strong></a>(self, error_code, module, function, msg, user_data)</dt><dd><tt>Error&nbsp;handler&nbsp;function</tt></dd></dl>
+
+<dl><dt><a name="CVodeSolver-f"><strong>f</strong></a>(self, t, y, ydot, user_data)</dt><dd><tt>Right-hand-side&nbsp;function</tt></dd></dl>
+
+<dl><dt><a name="CVodeSolver-g"><strong>g</strong></a>(self, t, y, gout, user_data)</dt><dd><tt>Root&nbsp;function</tt></dd></dl>
+
+<dl><dt><a name="CVodeSolver-reset"><strong>reset</strong></a>(self, time)</dt></dl>
+
+<dl><dt><a name="CVodeSolver-step"><strong>step</strong></a>(self, t, tNext)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-FormatError"><strong>FormatError</strong></a>(...)</dt><dd><tt><a href="#-FormatError">FormatError</a>([integer])&nbsp;-&gt;&nbsp;string<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;win32&nbsp;error&nbsp;code&nbsp;into&nbsp;a&nbsp;string.&nbsp;If&nbsp;the&nbsp;error&nbsp;code&nbsp;is&nbsp;not<br>
+given,&nbsp;the&nbsp;return&nbsp;value&nbsp;of&nbsp;a&nbsp;call&nbsp;to&nbsp;GetLastError()&nbsp;is&nbsp;used.</tt></dd></dl>
+ <dl><dt><a name="-POINTER"><strong>POINTER</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-addressof"><strong>addressof</strong></a>(...)</dt><dd><tt><a href="#-addressof">addressof</a>(C&nbsp;instance)&nbsp;-&gt;&nbsp;integer<br>
+Return&nbsp;the&nbsp;address&nbsp;of&nbsp;the&nbsp;C&nbsp;instance&nbsp;internal&nbsp;buffer</tt></dd></dl>
+ <dl><dt><a name="-alignment"><strong>alignment</strong></a>(...)</dt><dd><tt><a href="#-alignment">alignment</a>(C&nbsp;type)&nbsp;-&gt;&nbsp;integer<br>
+<a href="#-alignment">alignment</a>(C&nbsp;instance)&nbsp;-&gt;&nbsp;integer<br>
+Return&nbsp;the&nbsp;alignment&nbsp;requirements&nbsp;of&nbsp;a&nbsp;C&nbsp;instance</tt></dd></dl>
+ <dl><dt><a name="-byref"><strong>byref</strong></a>(...)</dt><dd><tt><a href="#-byref">byref</a>(C&nbsp;instance[,&nbsp;offset=0])&nbsp;-&gt;&nbsp;byref-<a href="builtins.html#object">object</a><br>
+Return&nbsp;a&nbsp;pointer&nbsp;lookalike&nbsp;to&nbsp;a&nbsp;C&nbsp;instance,&nbsp;only&nbsp;usable<br>
+as&nbsp;function&nbsp;argument</tt></dd></dl>
+ <dl><dt><a name="-get_errno"><strong>get_errno</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-get_last_error"><strong>get_last_error</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-pointer"><strong>pointer</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-resize"><strong>resize</strong></a>(...)</dt><dd><tt>Resize&nbsp;the&nbsp;memory&nbsp;buffer&nbsp;of&nbsp;a&nbsp;ctypes&nbsp;instance</tt></dd></dl>
+ <dl><dt><a name="-set_errno"><strong>set_errno</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-set_last_error"><strong>set_last_error</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-sizeof"><strong>sizeof</strong></a>(...)</dt><dd><tt><a href="#-sizeof">sizeof</a>(C&nbsp;type)&nbsp;-&gt;&nbsp;integer<br>
+<a href="#-sizeof">sizeof</a>(C&nbsp;instance)&nbsp;-&gt;&nbsp;integer<br>
+Return&nbsp;the&nbsp;size&nbsp;in&nbsp;bytes&nbsp;of&nbsp;a&nbsp;C&nbsp;instance</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>CV_ADAMS</strong> = 1<br>
+<strong>CV_BDF</strong> = 2<br>
+<strong>CV_NORMAL</strong> = 1<br>
+<strong>CV_ROOT_RETURN</strong> = 2<br>
+<strong>CV_SUCCESS</strong> = 0<br>
+<strong>CVode</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeCreate</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeFree</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeGetRootInfo</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeInit</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeReInit</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeRootInit</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeSVtolerances</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeSetErrHandlerFn</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeSetLinearSolver</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeSetMaxNumSteps</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeSetMaxStep</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>CVodeSetNoInactiveRootWarn</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>DEFAULT_MODE</strong> = 0<br>
+<strong>GetLastError</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>N_VDestroy_Serial</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>N_VNew_Serial</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>RTLD_GLOBAL</strong> = 0<br>
+<strong>RTLD_LOCAL</strong> = 0<br>
+<strong>SUNDIALSGetVersionNumber</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>SUNDenseMatrix</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>SUNLinSol_Dense</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>cdll</strong> = &lt;ctypes.LibraryLoader object&gt;<br>
+<strong>memmove</strong> = &lt;CFunctionType object&gt;<br>
+<strong>memset</strong> = &lt;CFunctionType object&gt;<br>
+<strong>oledll</strong> = &lt;ctypes.LibraryLoader object&gt;<br>
+<strong>pydll</strong> = &lt;ctypes.LibraryLoader object&gt;<br>
+<strong>pythonapi</strong> = &lt;PyDLL 'python dll', handle 7ffdc8040000&gt;<br>
+<strong>sundials_cvode</strong> = &lt;CDLL 'C:\Users\AGV2FE\Anaconda3\lib\site-packag...windows\sundials_cvode.dll', handle 7ffdd7d50000&gt;<br>
+<strong>sundials_nvecserial</strong> = &lt;CDLL 'C:\Users\AGV2FE\Anaconda3\lib\site-packag...ws\sundials_nvecserial.dll', handle 7ffde5df0000&gt;<br>
+<strong>sundials_sunlinsoldense</strong> = &lt;CDLL 'C:\Users\AGV2FE\Anaconda3\lib\site-packag...undials_sunlinsoldense.dll', handle 7ffde9af0000&gt;<br>
+<strong>sundials_sunmatrixdense</strong> = &lt;CDLL 'C:\Users\AGV2FE\Anaconda3\lib\site-packag...undials_sunmatrixdense.dll', handle 7ffde4cd0000&gt;<br>
+<strong>windll</strong> = &lt;ctypes.LibraryLoader object&gt;</td></tr></table>
+</body></html>

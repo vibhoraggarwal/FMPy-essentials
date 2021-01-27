@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package fmpy.cross_check</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="fmpy.html"><font color="#ffffff">fmpy</font></a>.cross_check</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cagv2fe%5Canaconda3%5Clib%5Csite-packages%5Cfmpy%5Ccross_check%5C__init__.py">c:\users\agv2fe\anaconda3\lib\site-packages\fmpy\cross_check\__init__.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="fmpy.cross_check.__main__.html">__main__</a><br>
+</td><td width="25%" valign=top><a href="fmpy.cross_check.cross_check.html">cross_check</a><br>
+</td><td width="25%" valign=top><a href="fmpy.cross_check.result_tables.html">result_tables</a><br>
+</td><td width="25%" valign=top><a href="fmpy.cross_check.validate_vendor_repo.html">validate_vendor_repo</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-get_vendor_ids"><strong>get_vendor_ids</strong></a>(tools_csv)</dt><dd><tt>Get&nbsp;vendor&nbsp;and&nbsp;tool&nbsp;info&nbsp;from&nbsp;tools.csv<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tools_csv&nbsp;&nbsp;path&nbsp;to&nbsp;the&nbsp;_data/tools.csv&nbsp;in&nbsp;the&nbsp;fmi-standard.org&nbsp;repository<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;dictionary&nbsp;{vendor_id:&nbsp;(tool_id,&nbsp;tool_name)}</tt></dd></dl>
+ <dl><dt><a name="-validate_result"><strong>validate_result</strong></a>(result, reference, t_start, t_stop)</dt><dd><tt>Validate&nbsp;a&nbsp;simulation&nbsp;result&nbsp;against&nbsp;a&nbsp;reference&nbsp;result<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;structured&nbsp;NumPy&nbsp;array&nbsp;where&nbsp;the&nbsp;first&nbsp;column&nbsp;is&nbsp;the&nbsp;time<br>
+&nbsp;&nbsp;&nbsp;&nbsp;reference&nbsp;&nbsp;&nbsp;same&nbsp;as&nbsp;result<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;problems&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;list&nbsp;of&nbsp;problems</tt></dd></dl>
+ <dl><dt><a name="-validate_signal"><strong>validate_signal</strong></a>(t, y, t_ref, y_ref, t_start, t_stop, num=1000, dx=21, dy=0.1)</dt><dd><tt>Validate&nbsp;a&nbsp;signal&nbsp;y(t)&nbsp;against&nbsp;a&nbsp;reference&nbsp;signal&nbsp;y_ref(t_ref)&nbsp;by&nbsp;creating&nbsp;a&nbsp;band<br>
+around&nbsp;y_ref&nbsp;and&nbsp;finding&nbsp;the&nbsp;values&nbsp;in&nbsp;y&nbsp;outside&nbsp;the&nbsp;band<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time&nbsp;of&nbsp;the&nbsp;signal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;y&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values&nbsp;of&nbsp;the&nbsp;signal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;t_ref&nbsp;&nbsp;&nbsp;&nbsp;time&nbsp;of&nbsp;the&nbsp;reference&nbsp;signal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;y_ref&nbsp;&nbsp;&nbsp;&nbsp;values&nbsp;of&nbsp;the&nbsp;reference&nbsp;signal<br>
+&nbsp;&nbsp;&nbsp;&nbsp;t_start&nbsp;&nbsp;start&nbsp;time&nbsp;of&nbsp;the&nbsp;band<br>
+&nbsp;&nbsp;&nbsp;&nbsp;t_stop&nbsp;&nbsp;&nbsp;stop&nbsp;time&nbsp;of&nbsp;the&nbsp;band<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;of&nbsp;samples&nbsp;for&nbsp;the&nbsp;band<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dx&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horizontal&nbsp;tolerance&nbsp;in&nbsp;samples<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;relative&nbsp;vertical&nbsp;tolerance<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;t_band&nbsp;&nbsp;time&nbsp;values&nbsp;of&nbsp;the&nbsp;band<br>
+&nbsp;&nbsp;&nbsp;&nbsp;y_min&nbsp;&nbsp;&nbsp;lower&nbsp;limit&nbsp;of&nbsp;the&nbsp;band<br>
+&nbsp;&nbsp;&nbsp;&nbsp;y_max&nbsp;&nbsp;&nbsp;upper&nbsp;limit&nbsp;of&nbsp;the&nbsp;band<br>
+&nbsp;&nbsp;&nbsp;&nbsp;i_out&nbsp;&nbsp;&nbsp;indices&nbsp;of&nbsp;the&nbsp;outliers&nbsp;in&nbsp;y</tt></dd></dl>
+</td></tr></table>
+</body></html>

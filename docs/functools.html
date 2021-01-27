@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module functools</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>functools</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cagv2fe%5Canaconda3%5Clib%5Cfunctools.py">c:\users\agv2fe\anaconda3\lib\functools.py</a><br><a href="https://docs.python.org/3.8/library/functools">Module Reference</a></font></td></tr></table>
+    <p><tt>functools.py&nbsp;-&nbsp;Tools&nbsp;for&nbsp;working&nbsp;with&nbsp;functions&nbsp;and&nbsp;callable&nbsp;objects</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="functools.html#cached_property">cached_property</a>
+</font></dt><dt><font face="helvetica, arial"><a href="functools.html#partial">partial</a>
+</font></dt><dt><font face="helvetica, arial"><a href="functools.html#partialmethod">partialmethod</a>
+</font></dt><dt><font face="helvetica, arial"><a href="functools.html#singledispatchmethod">singledispatchmethod</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="cached_property">class <strong>cached_property</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#cached_property">cached_property</a>(func)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="cached_property-__get__"><strong>__get__</strong></a>(self, instance, owner=None)</dt></dl>
+
+<dl><dt><a name="cached_property-__init__"><strong>__init__</strong></a>(self, func)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="cached_property-__set_name__"><strong>__set_name__</strong></a>(self, owner, name)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="partial">class <strong>partial</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#partial">partial</a>(func,&nbsp;*args,&nbsp;**keywords)&nbsp;-&nbsp;new&nbsp;function&nbsp;with&nbsp;<a href="#partial">partial</a>&nbsp;application<br>
+of&nbsp;the&nbsp;given&nbsp;arguments&nbsp;and&nbsp;keywords.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="partial-__call__"><strong>__call__</strong></a>(self, /, *args, **kwargs)</dt><dd><tt>Call&nbsp;self&nbsp;as&nbsp;a&nbsp;function.</tt></dd></dl>
+
+<dl><dt><a name="partial-__delattr__"><strong>__delattr__</strong></a>(self, name, /)</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="partial-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="partial-__reduce__"><strong>__reduce__</strong></a>(...)</dt><dd><tt>Helper&nbsp;for&nbsp;pickle.</tt></dd></dl>
+
+<dl><dt><a name="partial-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="partial-__setattr__"><strong>__setattr__</strong></a>(self, name, value, /)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="partial-__setstate__"><strong>__setstate__</strong></a>(...)</dt></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="partial-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;<a href="builtins.html#object">object</a>.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+</dl>
+<dl><dt><strong>args</strong></dt>
+<dd><tt>tuple&nbsp;of&nbsp;arguments&nbsp;to&nbsp;future&nbsp;partial&nbsp;calls</tt></dd>
+</dl>
+<dl><dt><strong>func</strong></dt>
+<dd><tt>function&nbsp;object&nbsp;to&nbsp;use&nbsp;in&nbsp;future&nbsp;partial&nbsp;calls</tt></dd>
+</dl>
+<dl><dt><strong>keywords</strong></dt>
+<dd><tt>dictionary&nbsp;of&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;future&nbsp;partial&nbsp;calls</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="partialmethod">class <strong>partialmethod</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#partialmethod">partialmethod</a>(func,&nbsp;/,&nbsp;*args,&nbsp;**keywords)<br>
+&nbsp;<br>
+Method&nbsp;descriptor&nbsp;with&nbsp;<a href="#partial">partial</a>&nbsp;application&nbsp;of&nbsp;the&nbsp;given&nbsp;arguments<br>
+and&nbsp;keywords.<br>
+&nbsp;<br>
+Supports&nbsp;wrapping&nbsp;existing&nbsp;descriptors&nbsp;and&nbsp;handles&nbsp;non-descriptor<br>
+callables&nbsp;as&nbsp;instance&nbsp;methods.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="partialmethod-__get__"><strong>__get__</strong></a>(self, obj, cls=None)</dt></dl>
+
+<dl><dt><a name="partialmethod-__init__"><strong>__init__</strong></a>(self, func, /, *args, **keywords)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="partialmethod-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__isabstractmethod__</strong></dt>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="singledispatchmethod">class <strong>singledispatchmethod</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#singledispatchmethod">singledispatchmethod</a>(func)<br>
+&nbsp;<br>
+Single-dispatch&nbsp;generic&nbsp;method&nbsp;descriptor.<br>
+&nbsp;<br>
+Supports&nbsp;wrapping&nbsp;existing&nbsp;descriptors&nbsp;and&nbsp;handles&nbsp;non-descriptor<br>
+callables&nbsp;as&nbsp;instance&nbsp;methods.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="singledispatchmethod-__get__"><strong>__get__</strong></a>(self, obj, cls=None)</dt></dl>
+
+<dl><dt><a name="singledispatchmethod-__init__"><strong>__init__</strong></a>(self, func)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="singledispatchmethod-register"><strong>register</strong></a>(self, cls, method=None)</dt><dd><tt>generic_method.<a href="#singledispatchmethod-register">register</a>(cls,&nbsp;func)&nbsp;-&gt;&nbsp;func<br>
+&nbsp;<br>
+Registers&nbsp;a&nbsp;new&nbsp;implementation&nbsp;for&nbsp;the&nbsp;given&nbsp;*cls*&nbsp;on&nbsp;a&nbsp;*generic_method*.</tt></dd></dl>
+
+<hr>
+Readonly properties defined here:<br>
+<dl><dt><strong>__isabstractmethod__</strong></dt>
+</dl>
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-cmp_to_key"><strong>cmp_to_key</strong></a>(...)</dt><dd><tt>Convert&nbsp;a&nbsp;cmp=&nbsp;function&nbsp;into&nbsp;a&nbsp;key=&nbsp;function.</tt></dd></dl>
+ <dl><dt><a name="-lru_cache"><strong>lru_cache</strong></a>(maxsize=128, typed=False)</dt><dd><tt>Least-recently-used&nbsp;cache&nbsp;decorator.<br>
+&nbsp;<br>
+If&nbsp;*maxsize*&nbsp;is&nbsp;set&nbsp;to&nbsp;None,&nbsp;the&nbsp;LRU&nbsp;features&nbsp;are&nbsp;disabled&nbsp;and&nbsp;the&nbsp;cache<br>
+can&nbsp;grow&nbsp;without&nbsp;bound.<br>
+&nbsp;<br>
+If&nbsp;*typed*&nbsp;is&nbsp;True,&nbsp;arguments&nbsp;of&nbsp;different&nbsp;types&nbsp;will&nbsp;be&nbsp;cached&nbsp;separately.<br>
+For&nbsp;example,&nbsp;f(3.0)&nbsp;and&nbsp;f(3)&nbsp;will&nbsp;be&nbsp;treated&nbsp;as&nbsp;distinct&nbsp;calls&nbsp;with<br>
+distinct&nbsp;results.<br>
+&nbsp;<br>
+Arguments&nbsp;to&nbsp;the&nbsp;cached&nbsp;function&nbsp;must&nbsp;be&nbsp;hashable.<br>
+&nbsp;<br>
+View&nbsp;the&nbsp;cache&nbsp;statistics&nbsp;named&nbsp;tuple&nbsp;(hits,&nbsp;misses,&nbsp;maxsize,&nbsp;currsize)<br>
+with&nbsp;f.cache_info().&nbsp;&nbsp;Clear&nbsp;the&nbsp;cache&nbsp;and&nbsp;statistics&nbsp;with&nbsp;f.cache_clear().<br>
+Access&nbsp;the&nbsp;underlying&nbsp;function&nbsp;with&nbsp;f.__wrapped__.<br>
+&nbsp;<br>
+See:&nbsp;&nbsp;<a href="http://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU">http://en.wikipedia.org/wiki/Cache_replacement_policies#Least_recently_used_(LRU</a>)</tt></dd></dl>
+ <dl><dt><a name="-reduce"><strong>reduce</strong></a>(...)</dt><dd><tt><a href="#-reduce">reduce</a>(function,&nbsp;sequence[,&nbsp;initial])&nbsp;-&gt;&nbsp;value<br>
+&nbsp;<br>
+Apply&nbsp;a&nbsp;function&nbsp;of&nbsp;two&nbsp;arguments&nbsp;cumulatively&nbsp;to&nbsp;the&nbsp;items&nbsp;of&nbsp;a&nbsp;sequence,<br>
+from&nbsp;left&nbsp;to&nbsp;right,&nbsp;so&nbsp;as&nbsp;to&nbsp;reduce&nbsp;the&nbsp;sequence&nbsp;to&nbsp;a&nbsp;single&nbsp;value.<br>
+For&nbsp;example,&nbsp;<a href="#-reduce">reduce</a>(lambda&nbsp;x,&nbsp;y:&nbsp;x+y,&nbsp;[1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5])&nbsp;calculates<br>
+((((1+2)+3)+4)+5).&nbsp;&nbsp;If&nbsp;initial&nbsp;is&nbsp;present,&nbsp;it&nbsp;is&nbsp;placed&nbsp;before&nbsp;the&nbsp;items<br>
+of&nbsp;the&nbsp;sequence&nbsp;in&nbsp;the&nbsp;calculation,&nbsp;and&nbsp;serves&nbsp;as&nbsp;a&nbsp;default&nbsp;when&nbsp;the<br>
+sequence&nbsp;is&nbsp;empty.</tt></dd></dl>
+ <dl><dt><a name="-singledispatch"><strong>singledispatch</strong></a>(func)</dt><dd><tt>Single-dispatch&nbsp;generic&nbsp;function&nbsp;decorator.<br>
+&nbsp;<br>
+Transforms&nbsp;a&nbsp;function&nbsp;into&nbsp;a&nbsp;generic&nbsp;function,&nbsp;which&nbsp;can&nbsp;have&nbsp;different<br>
+behaviours&nbsp;depending&nbsp;upon&nbsp;the&nbsp;type&nbsp;of&nbsp;its&nbsp;first&nbsp;argument.&nbsp;The&nbsp;decorated<br>
+function&nbsp;acts&nbsp;as&nbsp;the&nbsp;default&nbsp;implementation,&nbsp;and&nbsp;additional<br>
+implementations&nbsp;can&nbsp;be&nbsp;registered&nbsp;using&nbsp;the&nbsp;register()&nbsp;attribute&nbsp;of&nbsp;the<br>
+generic&nbsp;function.</tt></dd></dl>
+ <dl><dt><a name="-total_ordering"><strong>total_ordering</strong></a>(cls)</dt><dd><tt>Class&nbsp;decorator&nbsp;that&nbsp;fills&nbsp;in&nbsp;missing&nbsp;ordering&nbsp;methods</tt></dd></dl>
+ <dl><dt><a name="-update_wrapper"><strong>update_wrapper</strong></a>(wrapper, wrapped, assigned=('__module__', '__name__', '__qualname__', '__doc__', '__annotations__'), updated=('__dict__',))</dt><dd><tt>Update&nbsp;a&nbsp;wrapper&nbsp;function&nbsp;to&nbsp;look&nbsp;like&nbsp;the&nbsp;wrapped&nbsp;function<br>
+&nbsp;<br>
+wrapper&nbsp;is&nbsp;the&nbsp;function&nbsp;to&nbsp;be&nbsp;updated<br>
+wrapped&nbsp;is&nbsp;the&nbsp;original&nbsp;function<br>
+assigned&nbsp;is&nbsp;a&nbsp;tuple&nbsp;naming&nbsp;the&nbsp;attributes&nbsp;assigned&nbsp;directly<br>
+from&nbsp;the&nbsp;wrapped&nbsp;function&nbsp;to&nbsp;the&nbsp;wrapper&nbsp;function&nbsp;(defaults&nbsp;to<br>
+functools.WRAPPER_ASSIGNMENTS)<br>
+updated&nbsp;is&nbsp;a&nbsp;tuple&nbsp;naming&nbsp;the&nbsp;attributes&nbsp;of&nbsp;the&nbsp;wrapper&nbsp;that<br>
+are&nbsp;updated&nbsp;with&nbsp;the&nbsp;corresponding&nbsp;attribute&nbsp;from&nbsp;the&nbsp;wrapped<br>
+function&nbsp;(defaults&nbsp;to&nbsp;functools.WRAPPER_UPDATES)</tt></dd></dl>
+ <dl><dt><a name="-wraps"><strong>wraps</strong></a>(wrapped, assigned=('__module__', '__name__', '__qualname__', '__doc__', '__annotations__'), updated=('__dict__',))</dt><dd><tt>Decorator&nbsp;factory&nbsp;to&nbsp;apply&nbsp;<a href="#-update_wrapper">update_wrapper</a>()&nbsp;to&nbsp;a&nbsp;wrapper&nbsp;function<br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;decorator&nbsp;that&nbsp;invokes&nbsp;<a href="#-update_wrapper">update_wrapper</a>()&nbsp;with&nbsp;the&nbsp;decorated<br>
+function&nbsp;as&nbsp;the&nbsp;wrapper&nbsp;argument&nbsp;and&nbsp;the&nbsp;arguments&nbsp;to&nbsp;<a href="#-wraps">wraps</a>()&nbsp;as&nbsp;the<br>
+remaining&nbsp;arguments.&nbsp;Default&nbsp;arguments&nbsp;are&nbsp;as&nbsp;for&nbsp;<a href="#-update_wrapper">update_wrapper</a>().<br>
+This&nbsp;is&nbsp;a&nbsp;convenience&nbsp;function&nbsp;to&nbsp;simplify&nbsp;applying&nbsp;<a href="#partial">partial</a>()&nbsp;to<br>
+<a href="#-update_wrapper">update_wrapper</a>().</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>WRAPPER_ASSIGNMENTS</strong> = ('__module__', '__name__', '__qualname__', '__doc__', '__annotations__')<br>
+<strong>WRAPPER_UPDATES</strong> = ('__dict__',)<br>
+<strong>__all__</strong> = ['update_wrapper', 'wraps', 'WRAPPER_ASSIGNMENTS', 'WRAPPER_UPDATES', 'total_ordering', 'cmp_to_key', 'lru_cache', 'reduce', 'partial', 'partialmethod', 'singledispatch', 'singledispatchmethod', 'cached_property']</td></tr></table>
+</body></html>

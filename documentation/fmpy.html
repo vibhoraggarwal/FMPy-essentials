@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package fmpy</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>fmpy</strong></big></big> (version 0.2.25)</font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cagv2fe%5Canaconda3%5Clib%5Csite-packages%5Cfmpy%5C__init__.py">c:\users\agv2fe\anaconda3\lib\site-packages\fmpy\__init__.py</a></font></td></tr></table>
+    <p><tt>Simulate&nbsp;Functional&nbsp;Mock-up&nbsp;Units&nbsp;(FMUs)&nbsp;in&nbsp;Python</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="fmpy.__main__.html">__main__</a><br>
+<a href="fmpy.command_line.html">command_line</a><br>
+<a href="fmpy.cross_check.html"><strong>cross_check</strong>&nbsp;(package)</a><br>
+<a href="fmpy.cswrapper.html"><strong>cswrapper</strong>&nbsp;(package)</a><br>
+</td><td width="25%" valign=top><a href="fmpy.examples.html"><strong>examples</strong>&nbsp;(package)</a><br>
+<a href="fmpy.fmi1.html">fmi1</a><br>
+<a href="fmpy.fmi2.html">fmi2</a><br>
+<a href="fmpy.fmi3.html">fmi3</a><br>
+</td><td width="25%" valign=top><a href="fmpy.gui.html"><strong>gui</strong>&nbsp;(package)</a><br>
+<a href="fmpy.logging.html"><strong>logging</strong>&nbsp;(package)</a><br>
+<a href="fmpy.model_description.html">model_description</a><br>
+<a href="fmpy.simulation.html">simulation</a><br>
+</td><td width="25%" valign=top><a href="fmpy.ssp.html"><strong>ssp</strong>&nbsp;(package)</a><br>
+<a href="fmpy.sundials.html"><strong>sundials</strong>&nbsp;(package)</a><br>
+<a href="fmpy.util.html">util</a><br>
+<a href="fmpy.webapp.html"><strong>webapp</strong>&nbsp;(package)</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-FormatError"><strong>FormatError</strong></a>(...)</dt><dd><tt><a href="#-FormatError">FormatError</a>([integer])&nbsp;-&gt;&nbsp;string<br>
+&nbsp;<br>
+Convert&nbsp;a&nbsp;win32&nbsp;error&nbsp;code&nbsp;into&nbsp;a&nbsp;string.&nbsp;If&nbsp;the&nbsp;error&nbsp;code&nbsp;is&nbsp;not<br>
+given,&nbsp;the&nbsp;return&nbsp;value&nbsp;of&nbsp;a&nbsp;call&nbsp;to&nbsp;GetLastError()&nbsp;is&nbsp;used.</tt></dd></dl>
+ <dl><dt><a name="-POINTER"><strong>POINTER</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-addressof"><strong>addressof</strong></a>(...)</dt><dd><tt><a href="#-addressof">addressof</a>(C&nbsp;instance)&nbsp;-&gt;&nbsp;integer<br>
+Return&nbsp;the&nbsp;address&nbsp;of&nbsp;the&nbsp;C&nbsp;instance&nbsp;internal&nbsp;buffer</tt></dd></dl>
+ <dl><dt><a name="-alignment"><strong>alignment</strong></a>(...)</dt><dd><tt><a href="#-alignment">alignment</a>(C&nbsp;type)&nbsp;-&gt;&nbsp;integer<br>
+<a href="#-alignment">alignment</a>(C&nbsp;instance)&nbsp;-&gt;&nbsp;integer<br>
+Return&nbsp;the&nbsp;alignment&nbsp;requirements&nbsp;of&nbsp;a&nbsp;C&nbsp;instance</tt></dd></dl>
+ <dl><dt><a name="-byref"><strong>byref</strong></a>(...)</dt><dd><tt><a href="#-byref">byref</a>(C&nbsp;instance[,&nbsp;offset=0])&nbsp;-&gt;&nbsp;byref-object<br>
+Return&nbsp;a&nbsp;pointer&nbsp;lookalike&nbsp;to&nbsp;a&nbsp;C&nbsp;instance,&nbsp;only&nbsp;usable<br>
+as&nbsp;function&nbsp;argument</tt></dd></dl>
+ <dl><dt><a name="-dump"><strong>dump</strong></a>(filename)</dt><dd><tt>Print&nbsp;the&nbsp;model&nbsp;information&nbsp;and&nbsp;variables&nbsp;of&nbsp;an&nbsp;FMU<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;of&nbsp;the&nbsp;FMU</tt></dd></dl>
+ <dl><dt><a name="-extract"><strong>extract</strong></a>(filename, unzipdir=None)</dt><dd><tt>Extract&nbsp;a&nbsp;ZIP&nbsp;archive&nbsp;to&nbsp;a&nbsp;temporary&nbsp;directory<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;of&nbsp;the&nbsp;ZIP&nbsp;archive<br>
+&nbsp;&nbsp;&nbsp;&nbsp;unzipdir&nbsp;&nbsp;&nbsp;&nbsp;target&nbsp;directory&nbsp;(None:&nbsp;create&nbsp;temporary&nbsp;directory)<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;unzipdir&nbsp;&nbsp;&nbsp;&nbsp;path&nbsp;to&nbsp;the&nbsp;directory&nbsp;that&nbsp;contains&nbsp;the&nbsp;extracted&nbsp;files</tt></dd></dl>
+ <dl><dt><a name="-fmi_info"><strong>fmi_info</strong></a>(filename)</dt><dd><tt>Read&nbsp;the&nbsp;FMI&nbsp;version&nbsp;and&nbsp;supported&nbsp;FMI&nbsp;types&nbsp;from&nbsp;the&nbsp;FMU&nbsp;without&nbsp;extracting&nbsp;it<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;of&nbsp;the&nbsp;FMU<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fmi_version&nbsp;&nbsp;&nbsp;FMI&nbsp;version&nbsp;as&nbsp;a&nbsp;string&nbsp;('1.0'&nbsp;or&nbsp;'2.0')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fmi_types&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list&nbsp;of&nbsp;supported&nbsp;FMI&nbsp;types&nbsp;('CoSimulation',&nbsp;'ModelExchange')</tt></dd></dl>
+ <dl><dt><a name="-freeLibrary"><strong>freeLibrary</strong></a> = FreeLibrary(...)</dt><dd><tt>FreeLibrary(handle)&nbsp;-&gt;&nbsp;void<br>
+&nbsp;<br>
+Free&nbsp;the&nbsp;handle&nbsp;of&nbsp;an&nbsp;executable&nbsp;previously&nbsp;loaded&nbsp;by&nbsp;LoadLibrary.</tt></dd></dl>
+ <dl><dt><a name="-get_errno"><strong>get_errno</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-get_last_error"><strong>get_last_error</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-pointer"><strong>pointer</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-resize"><strong>resize</strong></a>(...)</dt><dd><tt>Resize&nbsp;the&nbsp;memory&nbsp;buffer&nbsp;of&nbsp;a&nbsp;ctypes&nbsp;instance</tt></dd></dl>
+ <dl><dt><a name="-set_errno"><strong>set_errno</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-set_last_error"><strong>set_last_error</strong></a>(...)</dt></dl>
+ <dl><dt><a name="-sizeof"><strong>sizeof</strong></a>(...)</dt><dd><tt><a href="#-sizeof">sizeof</a>(C&nbsp;type)&nbsp;-&gt;&nbsp;integer<br>
+<a href="#-sizeof">sizeof</a>(C&nbsp;instance)&nbsp;-&gt;&nbsp;integer<br>
+Return&nbsp;the&nbsp;size&nbsp;in&nbsp;bytes&nbsp;of&nbsp;a&nbsp;C&nbsp;instance</tt></dd></dl>
+ <dl><dt><a name="-supported_platforms"><strong>supported_platforms</strong></a>(filename)</dt><dd><tt>Get&nbsp;the&nbsp;platforms&nbsp;supported&nbsp;by&nbsp;the&nbsp;FMU&nbsp;without&nbsp;extracting&nbsp;it<br>
+&nbsp;<br>
+Parameters:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;&nbsp;&nbsp;&nbsp;filename&nbsp;of&nbsp;the&nbsp;FMU,&nbsp;directory&nbsp;with&nbsp;extracted&nbsp;FMU&nbsp;or&nbsp;file&nbsp;like&nbsp;object<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;platforms&nbsp;&nbsp;&nbsp;a&nbsp;list&nbsp;of&nbsp;supported&nbsp;platforms&nbsp;supported&nbsp;by&nbsp;the&nbsp;FMU</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>DEFAULT_MODE</strong> = 0<br>
+<strong>GetLastError</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>RTLD_GLOBAL</strong> = 0<br>
+<strong>RTLD_LOCAL</strong> = 0<br>
+<strong>architecture</strong> = 'x86_64'<br>
+<strong>calloc</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>cdll</strong> = &lt;ctypes.LibraryLoader object&gt;<br>
+<strong>free</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>memmove</strong> = &lt;CFunctionType object&gt;<br>
+<strong>memset</strong> = &lt;CFunctionType object&gt;<br>
+<strong>oledll</strong> = &lt;ctypes.LibraryLoader object&gt;<br>
+<strong>platform</strong> = 'win64'<br>
+<strong>platform_tuple</strong> = 'x86_64-windows'<br>
+<strong>plot_library</strong> = 'matplotlib'<br>
+<strong>pydll</strong> = &lt;ctypes.LibraryLoader object&gt;<br>
+<strong>pythonapi</strong> = &lt;PyDLL 'python dll', handle 7ffdbbe90000&gt;<br>
+<strong>realloc</strong> = &lt;_FuncPtr object&gt;<br>
+<strong>sharedLibraryExtension</strong> = '.dll'<br>
+<strong>system</strong> = 'windows'<br>
+<strong>windll</strong> = &lt;ctypes.LibraryLoader object&gt;</td></tr></table>
+</body></html>

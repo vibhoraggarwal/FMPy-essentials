@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fmpy.examples package &#8212; FMPy documentation 2021 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="fmpy-examples-package">
+<h1>fmpy.examples package<a class="headerlink" href="#fmpy-examples-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-fmpy.examples.coupled_clutches">
+<span id="fmpy-examples-coupled-clutches-module"></span><h2>fmpy.examples.coupled_clutches module<a class="headerlink" href="#module-fmpy.examples.coupled_clutches" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="fmpy.examples.coupled_clutches.simulate_coupled_clutches">
+<code class="sig-prename descclassname">fmpy.examples.coupled_clutches.</code><code class="sig-name descname">simulate_coupled_clutches</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fmi_version</span><span class="o">=</span><span class="default_value">'2.0'</span></em>, <em class="sig-param"><span class="n">fmi_type</span><span class="o">=</span><span class="default_value">'ModelExchange'</span></em>, <em class="sig-param"><span class="n">output</span><span class="o">=</span><span class="default_value">['outputs[1]', 'outputs[2]', 'outputs[3]', 'outputs[4]']</span></em>, <em class="sig-param"><span class="n">solver</span><span class="o">=</span><span class="default_value">'CVode'</span></em>, <em class="sig-param"><span class="n">events</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">fmi_logging</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">show_plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.examples.coupled_clutches.simulate_coupled_clutches" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.examples.custom_input">
+<span id="fmpy-examples-custom-input-module"></span><h2>fmpy.examples.custom_input module<a class="headerlink" href="#module-fmpy.examples.custom_input" title="Permalink to this headline">¶</a></h2>
+<p>This example demonstrates how to use the FMU.get*() and FMU.set*() functions
+to set custom input and control the simulation</p>
+<dl class="py function">
+<dt id="fmpy.examples.custom_input.simulate_custom_input">
+<code class="sig-prename descclassname">fmpy.examples.custom_input.</code><code class="sig-name descname">simulate_custom_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">show_plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.examples.custom_input.simulate_custom_input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.examples.efficient_loops">
+<span id="fmpy-examples-efficient-loops-module"></span><h2>fmpy.examples.efficient_loops module<a class="headerlink" href="#module-fmpy.examples.efficient_loops" title="Permalink to this headline">¶</a></h2>
+<p>This example demonstrates how to save CPU time by reusing the extracted FMU,
+loaded model description, and FMU instance when simulating the same FMU multiple times</p>
+<dl class="py function">
+<dt id="fmpy.examples.efficient_loops.run_efficient_loop">
+<code class="sig-prename descclassname">fmpy.examples.efficient_loops.</code><code class="sig-name descname">run_efficient_loop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.examples.efficient_loops.run_efficient_loop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.examples.parameter_variation">
+<span id="fmpy-examples-parameter-variation-module"></span><h2>fmpy.examples.parameter_variation module<a class="headerlink" href="#module-fmpy.examples.parameter_variation" title="Permalink to this headline">¶</a></h2>
+<p>This example shows a full factorial variation of two model parameters
+using multiple cores.</p>
+<p>The goal of this experiment is to determine the losses of a Rectifier for
+different AC voltages and DC currents. Therefore the Rectifier.fmu is simulated
+for every parameter combination. The losses after 0.02 s (when a steady state has
+been reached) are averaged and returned as the result and plotted as a contour plot.</p>
+<dl class="py function">
+<dt id="fmpy.examples.parameter_variation.run_experiment">
+<code class="sig-prename descclassname">fmpy.examples.parameter_variation.</code><code class="sig-name descname">run_experiment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">show_plot</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.examples.parameter_variation.run_experiment" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.examples.parameter_variation.simulate_fmu">
+<code class="sig-prename descclassname">fmpy.examples.parameter_variation.</code><code class="sig-name descname">simulate_fmu</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.examples.parameter_variation.simulate_fmu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Worker function that simulates the FMU</p>
+<dl>
+<dt>Parameters:</dt><dd><p>args = [indices, fmu_args, start_vrs, result_vrs]</p>
+<p>indices     a list of indices into the parameter arrays
+fmu_args    FMU constructor arguments</p>
+</dd>
+<dt>Returns:</dt><dd><p>a list of tuples (i, [u_dc, losses]) that contain the index ‘i’ and the averaged results of the
+‘uDC’ and ‘Losses’ variables</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.examples">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-fmpy.examples" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">FMPy documentation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Dassault Systems.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/fmpy.examples.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

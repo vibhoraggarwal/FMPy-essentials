@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fmpy.ssp package &#8212; FMPy documentation 2021 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="fmpy-ssp-package">
+<h1>fmpy.ssp package<a class="headerlink" href="#fmpy-ssp-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fmpy-ssp-simulate-module">
+<h2>fmpy.ssp.simulate module<a class="headerlink" href="#fmpy-ssp-simulate-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-fmpy.ssp.simulation">
+<span id="fmpy-ssp-simulation-module"></span><h2>fmpy.ssp.simulation module<a class="headerlink" href="#module-fmpy.ssp.simulation" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="fmpy.ssp.simulation.add_path">
+<code class="sig-prename descclassname">fmpy.ssp.simulation.</code><code class="sig-name descname">add_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span></em>, <em class="sig-param"><span class="n">path</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.simulation.add_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.simulation.do_step">
+<code class="sig-prename descclassname">fmpy.ssp.simulation.</code><code class="sig-name descname">do_step</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">component</span></em>, <em class="sig-param"><span class="n">time</span></em>, <em class="sig-param"><span class="n">step_size</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.simulation.do_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform one simulation step</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.simulation.free_fmu">
+<code class="sig-prename descclassname">fmpy.ssp.simulation.</code><code class="sig-name descname">free_fmu</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">component</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.simulation.free_fmu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Free an FMU and remove its unzip dir</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.simulation.get_value">
+<code class="sig-prename descclassname">fmpy.ssp.simulation.</code><code class="sig-name descname">get_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">component</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.simulation.get_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a variable from a component</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.simulation.instantiate_fmu">
+<code class="sig-prename descclassname">fmpy.ssp.simulation.</code><code class="sig-name descname">instantiate_fmu</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">component</span></em>, <em class="sig-param"><span class="n">ssp_unzipdir</span></em>, <em class="sig-param"><span class="n">start_time</span></em>, <em class="sig-param"><span class="n">stop_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">parameter_set</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.simulation.instantiate_fmu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instantiate an FMU</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.simulation.set_parameters">
+<code class="sig-prename descclassname">fmpy.ssp.simulation.</code><code class="sig-name descname">set_parameters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">component</span></em>, <em class="sig-param"><span class="n">parameter_set</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.simulation.set_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply the parameters (start values) to a component</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.simulation.set_value">
+<code class="sig-prename descclassname">fmpy.ssp.simulation.</code><code class="sig-name descname">set_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">component</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.simulation.set_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a variable to a component</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.simulation.simulate_ssp">
+<code class="sig-prename descclassname">fmpy.ssp.simulation.</code><code class="sig-name descname">simulate_ssp</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ssp_filename</span></em>, <em class="sig-param"><span class="n">start_time</span><span class="o">=</span><span class="default_value">0.0</span></em>, <em class="sig-param"><span class="n">stop_time</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">step_size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">parameter_set</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">input</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.simulation.simulate_ssp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simulate a system of FMUs</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.ssp.ssd">
+<span id="fmpy-ssp-ssd-module"></span><h2>fmpy.ssp.ssd module<a class="headerlink" href="#module-fmpy.ssp.ssd" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.BaseElement">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">BaseElement</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.BaseElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.BooleanMappingTransformation">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">BooleanMappingTransformation</code><a class="headerlink" href="#fmpy.ssp.ssd.BooleanMappingTransformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.Component">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">Component</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.Component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.Element" title="fmpy.ssp.ssd.Element"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.Element</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.Connection">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">Connection</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.Connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.Connector">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">Connector</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.Connector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.DefaultExperiment">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">DefaultExperiment</code><a class="headerlink" href="#fmpy.ssp.ssd.DefaultExperiment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.DictionaryEntry">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">DictionaryEntry</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.DictionaryEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.Element">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">Element</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.Element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.EnumerationMappingTransformation">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">EnumerationMappingTransformation</code><a class="headerlink" href="#fmpy.ssp.ssd.EnumerationMappingTransformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.FixedStepMaster">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">FixedStepMaster</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.FixedStepMaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.FixedStepSolver">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">FixedStepSolver</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.FixedStepSolver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.IntegerMappingTransformation">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">IntegerMappingTransformation</code><a class="headerlink" href="#fmpy.ssp.ssd.IntegerMappingTransformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.LinearTransformation">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">LinearTransformation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">factor</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">offset</span><span class="o">=</span><span class="default_value">0.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.LinearTransformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.MappingEntry">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">MappingEntry</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.MappingEntry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.Parameter">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">Parameter</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.Parameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.ParameterBinding">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">ParameterBinding</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.ParameterBinding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.ParameterMapping">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">ParameterMapping</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.ParameterMapping" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a>, <a class="reference internal" href="#fmpy.ssp.ssd.TopLevelMetaData" title="fmpy.ssp.ssd.TopLevelMetaData"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.TopLevelMetaData</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.ParameterSet">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">ParameterSet</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.ParameterSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a>, <a class="reference internal" href="#fmpy.ssp.ssd.TopLevelMetaData" title="fmpy.ssp.ssd.TopLevelMetaData"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.TopLevelMetaData</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.SignalDictionary">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">SignalDictionary</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.SignalDictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a>, <a class="reference internal" href="#fmpy.ssp.ssd.TopLevelMetaData" title="fmpy.ssp.ssd.TopLevelMetaData"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.TopLevelMetaData</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.SignalDictionaryReference">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">SignalDictionaryReference</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.SignalDictionaryReference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.SimulationInformation">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">SimulationInformation</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.SimulationInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.System">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">System</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.System" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.Element" title="fmpy.ssp.ssd.Element"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.Element</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.SystemStructureDescription">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">SystemStructureDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.SystemStructureDescription" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.ssp.ssd.BaseElement" title="fmpy.ssp.ssd.BaseElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.BaseElement</span></code></a>, <a class="reference internal" href="#fmpy.ssp.ssd.TopLevelMetaData" title="fmpy.ssp.ssd.TopLevelMetaData"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.ssp.ssd.TopLevelMetaData</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.TopLevelMetaData">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">TopLevelMetaData</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.TopLevelMetaData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.Unit">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">Unit</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.Unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.VariableStepMaster">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">VariableStepMaster</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.VariableStepMaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.ssp.ssd.VariableStepSolver">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">VariableStepSolver</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.VariableStepSolver" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.add_tree_info">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">add_tree_info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.add_tree_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.build_path">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">build_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">object</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.build_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.find_components">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">find_components</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">system</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.find_components" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all components in system including (sub-systems)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.find_connectors">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">find_connectors</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.find_connectors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all connectors in element including (sub-systems)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.get_connections">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">get_connections</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">system</span></em>, <em class="sig-param"><span class="n">connectors</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.get_connections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a list of (start_connector, end_connector) from all connections in the system</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.get_connectors">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">get_connectors</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">element</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.get_connectors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.handle_system">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">handle_system</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">system</span></em>, <em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.handle_system" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Parameters:</dt><dd><p>system      …
+filename    filename of the SSP file</p>
+</dd>
+<dt>Returns:</dt><dd><p>A System object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.read_ssd">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">read_ssd</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">validate</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.read_ssd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.read_ssm">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">read_ssm</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">resource</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">validate</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.read_ssm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.read_ssv">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">read_ssv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">resource</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">validate</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.read_ssv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.ssp.ssd.validate_tree">
+<code class="sig-prename descclassname">fmpy.ssp.ssd.</code><code class="sig-name descname">validate_tree</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">root</span></em>, <em class="sig-param"><span class="n">schema_file</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.ssp.ssd.validate_tree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.ssp">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-fmpy.ssp" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">FMPy documentation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Dassault Systems.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/fmpy.ssp.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

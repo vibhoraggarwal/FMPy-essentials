@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fmpy.gui package &#8212; FMPy documentation 2021 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="fmpy-gui-package">
+<h1>fmpy.gui package<a class="headerlink" href="#fmpy-gui-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="fmpy.gui.generated.html">fmpy.gui.generated package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fmpy.gui.generated.html#module-fmpy.gui.generated">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-fmpy.gui.MainWindow">
+<span id="fmpy-gui-mainwindow-module"></span><h2>fmpy.gui.MainWindow module<a class="headerlink" href="#module-fmpy.gui.MainWindow" title="Permalink to this headline">¶</a></h2>
+<p>Entry point for the graphical user interface</p>
+<dl class="py class">
+<dt id="fmpy.gui.MainWindow.AboutDialog">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.MainWindow.</code><code class="sig-name descname">AboutDialog</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.AboutDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.gui.MainWindow.ClickableLabel">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.MainWindow.</code><code class="sig-name descname">ClickableLabel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.ClickableLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QLabel</span></code></p>
+<p>A QLabel that shows a pointing hand cursor and emits a <em>clicked</em> event when clicked</p>
+<dl class="py attribute">
+<dt id="fmpy.gui.MainWindow.ClickableLabel.clicked">
+<code class="sig-name descname">clicked</code><a class="headerlink" href="#fmpy.gui.MainWindow.ClickableLabel.clicked" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.ClickableLabel.mousePressEvent">
+<code class="sig-name descname">mousePressEvent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QMouseEvent</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.ClickableLabel.mousePressEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.gui.MainWindow.MainWindow">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.MainWindow.</code><code class="sig-name descname">MainWindow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QMainWindow</span></code></p>
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.addCoSimulationWrapper">
+<code class="sig-name descname">addCoSimulationWrapper</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.addCoSimulationWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add the Co-Simulation Wrapper to the FMU</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.addFileAssociation">
+<code class="sig-name descname">addFileAssociation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.addFileAssociation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Associate <a href="#id1"><span class="problematic" id="id2">*</span></a>.fmu with the FMPy GUI</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.addRemoting">
+<code class="sig-name descname">addRemoting</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.addRemoting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add 32-bit remoting binaries to the FMU</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.clearPlots">
+<code class="sig-name descname">clearPlots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.clearPlots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear all plots</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.compilePlatformBinary">
+<code class="sig-name descname">compilePlatformBinary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.compilePlatformBinary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compile the platform binary</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.copyValueReference">
+<code class="sig-name descname">copyValueReference</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.copyValueReference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy the value references of the selected variables to the clipboard</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.copyVariableName">
+<code class="sig-name descname">copyVariableName</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.copyVariableName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy the names of the selected variables to the clipboard</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.createCMakeProject">
+<code class="sig-name descname">createCMakeProject</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.createCMakeProject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a CMake project from a C code FMU</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.createDesktopShortcut">
+<code class="sig-name descname">createDesktopShortcut</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.createDesktopShortcut" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a desktop shortcut to start the GUI</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.createGraphics">
+<code class="sig-name descname">createGraphics</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.createGraphics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the graphical representation of the FMU’s inputs and outputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.createInputFile">
+<code class="sig-name descname">createInputFile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.createInputFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an input file based on the input variables in the model description</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.createJupyterNotebook">
+<code class="sig-name descname">createJupyterNotebook</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.createJupyterNotebook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Juypyter Notebook to simulate the FMU</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.deselectVariable">
+<code class="sig-name descname">deselectVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.deselectVariable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.dragEnterEvent">
+<code class="sig-name descname">dragEnterEvent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QDragEnterEvent</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.dragEnterEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.dropEvent">
+<code class="sig-name descname">dropEvent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QDropEvent</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.dropEvent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.editTable">
+<code class="sig-name descname">editTable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.editTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the table dialog</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.getSelectedVariables">
+<code class="sig-name descname">getSelectedVariables</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.getSelectedVariables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of selected variables in the current view</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.loadStartValues">
+<code class="sig-name descname">loadStartValues</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.loadStartValues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.newWindow">
+<code class="sig-name descname">newWindow</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.newWindow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.open">
+<code class="sig-name descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.openInputFile">
+<code class="sig-name descname">openInputFile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.openInputFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the input file in the default application</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.removeDuplicates">
+<em class="property">static </em><code class="sig-name descname">removeDuplicates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">seq</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.removeDuplicates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove duplicates from a sequence</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.saveChanges">
+<code class="sig-name descname">saveChanges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.saveChanges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.saveResult">
+<code class="sig-name descname">saveResult</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">plotted</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.saveResult" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.selectInputFile">
+<code class="sig-name descname">selectInputFile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.selectInputFile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.selectVariable">
+<code class="sig-name descname">selectVariable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.selectVariable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.setCurrentPage">
+<code class="sig-name descname">setCurrentPage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">widget</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.setCurrentPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the current page and the actions</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.setStatusMessage">
+<code class="sig-name descname">setStatusMessage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span></em>, <em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.setStatusMessage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.show">
+<code class="sig-name descname">show</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.showAboutDialog">
+<code class="sig-name descname">showAboutDialog</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.showAboutDialog" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.showColumn">
+<code class="sig-name descname">showColumn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">show</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.showColumn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.showContextMenu">
+<code class="sig-name descname">showContextMenu</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.showContextMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update and show the variables context menu</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.showInputFileInExplorer">
+<code class="sig-name descname">showInputFileInExplorer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.showInputFileInExplorer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reveal the input file in the file browser</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.simulationFinished">
+<code class="sig-name descname">simulationFinished</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.simulationFinished" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.startSimulation">
+<code class="sig-name descname">startSimulation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.startSimulation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.updatePlotData">
+<code class="sig-name descname">updatePlotData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.updatePlotData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.updatePlotLayout">
+<code class="sig-name descname">updatePlotLayout</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.updatePlotLayout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.MainWindow.MainWindow.updateSimulationSettings">
+<code class="sig-name descname">updateSimulationSettings</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.updateSimulationSettings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.MainWindow.MainWindow.variableDeselected">
+<code class="sig-name descname">variableDeselected</code><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.variableDeselected" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.MainWindow.MainWindow.variableSelected">
+<code class="sig-name descname">variableSelected</code><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.variableSelected" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.MainWindow.MainWindow.windowOffset">
+<code class="sig-name descname">windowOffset</code><em class="property"> = PyQt5.QtCore.QPoint()</em><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.windowOffset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.MainWindow.MainWindow.windows">
+<code class="sig-name descname">windows</code><em class="property"> = []</em><a class="headerlink" href="#fmpy.gui.MainWindow.MainWindow.windows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.gui.TableDialog">
+<span id="fmpy-gui-tabledialog-module"></span><h2>fmpy.gui.TableDialog module<a class="headerlink" href="#module-fmpy.gui.TableDialog" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="fmpy.gui.TableDialog.TableDialog">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.TableDialog.</code><code class="sig-name descname">TableDialog</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">modelVariables</span></em>, <em class="sig-param"><span class="n">variable</span></em>, <em class="sig-param"><span class="n">startValues</span></em>, <em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.TableDialog.TableDialog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtWidgets.QDialog</span></code></p>
+<p>A dialog to edit 1-d and 2-d array variables</p>
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableDialog.canEdit">
+<em class="property">static </em><code class="sig-name descname">canEdit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">variable</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.TableDialog.TableDialog.canEdit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether the variable can be edited</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableDialog.subscripts">
+<em class="property">static </em><code class="sig-name descname">subscripts</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.TableDialog.TableDialog.subscripts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the subscripts from a variable name</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableDialog.updatePlot">
+<code class="sig-name descname">updatePlot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.TableDialog.TableDialog.updatePlot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.gui.TableDialog.TableModel">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.TableDialog.</code><code class="sig-name descname">TableModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span></em>, <em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">startValues</span></em>, <em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.TableDialog.TableModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QAbstractTableModel</span></code></p>
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableModel.columnCount">
+<code class="sig-name descname">columnCount</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">parent</span><span class="p">:</span> <span class="n">QModelIndex</span> <span class="o">=</span> <span class="default_value">QModelIndex()</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#fmpy.gui.TableDialog.TableModel.columnCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableModel.data">
+<code class="sig-name descname">data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">Qt.DisplayRole</span></em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#fmpy.gui.TableDialog.TableModel.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableModel.flags">
+<code class="sig-name descname">flags</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em><span class="sig-paren">)</span> &#x2192; Qt.ItemFlags<a class="headerlink" href="#fmpy.gui.TableDialog.TableModel.flags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableModel.headerData">
+<code class="sig-name descname">headerData</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">int</em>, <em class="sig-param">Qt.Orientation</em>, <em class="sig-param">role: int = Qt.DisplayRole</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#fmpy.gui.TableDialog.TableModel.headerData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableModel.ind2sub">
+<code class="sig-name descname">ind2sub</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.TableDialog.TableModel.ind2sub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert index to subscripts</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableModel.rowCount">
+<code class="sig-name descname">rowCount</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">parent</span><span class="p">:</span> <span class="n">QModelIndex</span> <span class="o">=</span> <span class="default_value">QModelIndex()</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#fmpy.gui.TableDialog.TableModel.rowCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.TableDialog.TableModel.setData">
+<code class="sig-name descname">setData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em>, <em class="sig-param"><span class="n">Any</span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">Qt.EditRole</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#fmpy.gui.TableDialog.TableModel.setData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.gui.log">
+<span id="fmpy-gui-log-module"></span><h2>fmpy.gui.log module<a class="headerlink" href="#module-fmpy.gui.log" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="fmpy.gui.log.Log">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.log.</code><code class="sig-name descname">Log</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.log.Log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QAbstractTableModel</span></code></p>
+<dl class="py method">
+<dt id="fmpy.gui.log.Log.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.log.Log.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.log.Log.columnCount">
+<code class="sig-name descname">columnCount</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">parent</span><span class="p">:</span> <span class="n">QModelIndex</span> <span class="o">=</span> <span class="default_value">QModelIndex()</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#fmpy.gui.log.Log.columnCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.log.Log.currentMessageChanged">
+<code class="sig-name descname">currentMessageChanged</code><a class="headerlink" href="#fmpy.gui.log.Log.currentMessageChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.log.Log.data">
+<code class="sig-name descname">data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">Qt.DisplayRole</span></em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#fmpy.gui.log.Log.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.log.Log.log">
+<code class="sig-name descname">log</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span></em>, <em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.log.Log.log" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.log.Log.numberOfDebugMessagesChanged">
+<code class="sig-name descname">numberOfDebugMessagesChanged</code><a class="headerlink" href="#fmpy.gui.log.Log.numberOfDebugMessagesChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.log.Log.numberOfErrorMessagesChanged">
+<code class="sig-name descname">numberOfErrorMessagesChanged</code><a class="headerlink" href="#fmpy.gui.log.Log.numberOfErrorMessagesChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.log.Log.numberOfInfoMessagesChanged">
+<code class="sig-name descname">numberOfInfoMessagesChanged</code><a class="headerlink" href="#fmpy.gui.log.Log.numberOfInfoMessagesChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.log.Log.numberOfWarningMessagesChanged">
+<code class="sig-name descname">numberOfWarningMessagesChanged</code><a class="headerlink" href="#fmpy.gui.log.Log.numberOfWarningMessagesChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.log.Log.rowCount">
+<code class="sig-name descname">rowCount</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">parent</span><span class="p">:</span> <span class="n">QModelIndex</span> <span class="o">=</span> <span class="default_value">QModelIndex()</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#fmpy.gui.log.Log.rowCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.log.Log.severity">
+<em class="property">static </em><code class="sig-name descname">severity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">level</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.log.Log.severity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.gui.log.LogMessagesFilterProxyModel">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.log.</code><code class="sig-name descname">LogMessagesFilterProxyModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.log.LogMessagesFilterProxyModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QSortFilterProxyModel</span></code></p>
+<dl class="py method">
+<dt id="fmpy.gui.log.LogMessagesFilterProxyModel.filterAcceptsRow">
+<code class="sig-name descname">filterAcceptsRow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">int</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#fmpy.gui.log.LogMessagesFilterProxyModel.filterAcceptsRow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.log.LogMessagesFilterProxyModel.setShowDebugMessages">
+<code class="sig-name descname">setShowDebugMessages</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">show</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.log.LogMessagesFilterProxyModel.setShowDebugMessages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.log.LogMessagesFilterProxyModel.setShowErrorMessages">
+<code class="sig-name descname">setShowErrorMessages</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">show</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.log.LogMessagesFilterProxyModel.setShowErrorMessages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.log.LogMessagesFilterProxyModel.setShowInfoMessages">
+<code class="sig-name descname">setShowInfoMessages</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">show</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.log.LogMessagesFilterProxyModel.setShowInfoMessages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.log.LogMessagesFilterProxyModel.setShowWarningMessages">
+<code class="sig-name descname">setShowWarningMessages</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">show</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.log.LogMessagesFilterProxyModel.setShowWarningMessages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.gui.model">
+<span id="fmpy-gui-model-module"></span><h2>fmpy.gui.model module<a class="headerlink" href="#module-fmpy.gui.model" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="fmpy.gui.model.TreeItem">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.model.</code><code class="sig-name descname">TreeItem</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">variable</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.TreeItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="fmpy.gui.model.TreeItem.addChild">
+<code class="sig-name descname">addChild</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">child</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.TreeItem.addChild" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.TreeItem.find">
+<code class="sig-name descname">find</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.TreeItem.find" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.gui.model.VariablesFilterModel">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.model.</code><code class="sig-name descname">VariablesFilterModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QSortFilterProxyModel</span></code></p>
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesFilterModel.filterAcceptsRow">
+<code class="sig-name descname">filterAcceptsRow</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">int</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel.filterAcceptsRow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesFilterModel.setFilterByCausality">
+<code class="sig-name descname">setFilterByCausality</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel.setFilterByCausality" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesFilterModel.setFilterCalculatedParameters">
+<code class="sig-name descname">setFilterCalculatedParameters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel.setFilterCalculatedParameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesFilterModel.setFilterFixedString">
+<code class="sig-name descname">setFilterFixedString</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel.setFilterFixedString" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesFilterModel.setFilterIndependentVariables">
+<code class="sig-name descname">setFilterIndependentVariables</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel.setFilterIndependentVariables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesFilterModel.setFilterInputs">
+<code class="sig-name descname">setFilterInputs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel.setFilterInputs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesFilterModel.setFilterLocalVariables">
+<code class="sig-name descname">setFilterLocalVariables</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel.setFilterLocalVariables" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesFilterModel.setFilterOutputs">
+<code class="sig-name descname">setFilterOutputs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel.setFilterOutputs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesFilterModel.setFilterParameters">
+<code class="sig-name descname">setFilterParameters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filter</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesFilterModel.setFilterParameters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.gui.model.VariablesModel">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.model.</code><code class="sig-name descname">VariablesModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selectedVariables</span></em>, <em class="sig-param"><span class="n">startValues</span></em>, <em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QAbstractItemModel</span></code></p>
+<dl class="py attribute">
+<dt id="fmpy.gui.model.VariablesModel.COLUMN_NAMES">
+<code class="sig-name descname">COLUMN_NAMES</code><em class="property"> = ['Name', 'Value Reference', 'Initial', 'Causality', 'Variability', 'Start', 'Unit', 'Plot', 'Description']</em><a class="headerlink" href="#fmpy.gui.model.VariablesModel.COLUMN_NAMES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.model.VariablesModel.COLUMN_WIDTHS">
+<code class="sig-name descname">COLUMN_WIDTHS</code><em class="property"> = [200, 100, 70, 70, 70, 70, 40, 40]</em><a class="headerlink" href="#fmpy.gui.model.VariablesModel.COLUMN_WIDTHS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesModel.columnCount">
+<code class="sig-name descname">columnCount</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">parent</span><span class="p">:</span> <span class="n">QModelIndex</span> <span class="o">=</span> <span class="default_value">QModelIndex()</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#fmpy.gui.model.VariablesModel.columnCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesModel.columnData">
+<code class="sig-name descname">columnData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">v</span></em>, <em class="sig-param"><span class="n">column</span></em>, <em class="sig-param"><span class="n">role</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesModel.columnData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesModel.flags">
+<code class="sig-name descname">flags</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em><span class="sig-paren">)</span> &#x2192; Qt.ItemFlags<a class="headerlink" href="#fmpy.gui.model.VariablesModel.flags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesModel.headerData">
+<code class="sig-name descname">headerData</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">int</em>, <em class="sig-param">Qt.Orientation</em>, <em class="sig-param">role: int = Qt.DisplayRole</em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#fmpy.gui.model.VariablesModel.headerData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesModel.setData">
+<code class="sig-name descname">setData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em>, <em class="sig-param"><span class="n">Any</span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">Qt.EditRole</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#fmpy.gui.model.VariablesModel.setData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.model.VariablesModel.variableDeselected">
+<code class="sig-name descname">variableDeselected</code><a class="headerlink" href="#fmpy.gui.model.VariablesModel.variableDeselected" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesModel.variableForIndex">
+<code class="sig-name descname">variableForIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesModel.variableForIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.model.VariablesModel.variableSelected">
+<code class="sig-name descname">variableSelected</code><a class="headerlink" href="#fmpy.gui.model.VariablesModel.variableSelected" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.gui.model.VariablesTableModel">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.model.</code><code class="sig-name descname">VariablesTableModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selectedVariables</span></em>, <em class="sig-param"><span class="n">startValues</span></em>, <em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesTableModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.gui.model.VariablesModel" title="fmpy.gui.model.VariablesModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.gui.model.VariablesModel</span></code></a></p>
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTableModel.data">
+<code class="sig-name descname">data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">Qt.DisplayRole</span></em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#fmpy.gui.model.VariablesTableModel.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">VariablesTableModel.index(self, int, int, parent: QModelIndex = QModelIndex()) -&gt; QModelIndex</code></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTableModel.parent">
+<code class="sig-name descname">parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em><span class="sig-paren">)</span> &#x2192; QModelIndex<a class="headerlink" href="#fmpy.gui.model.VariablesTableModel.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>parent(self) -&gt; QObject</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTableModel.rowCount">
+<code class="sig-name descname">rowCount</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">parent</span><span class="p">:</span> <span class="n">QModelIndex</span> <span class="o">=</span> <span class="default_value">QModelIndex()</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#fmpy.gui.model.VariablesTableModel.rowCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTableModel.setModelDescription">
+<code class="sig-name descname">setModelDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">modelDescription</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesTableModel.setModelDescription" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTableModel.variableForIndex">
+<code class="sig-name descname">variableForIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesTableModel.variableForIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fmpy.gui.model.VariablesTreeModel">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.model.</code><code class="sig-name descname">VariablesTreeModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">selectedVariables</span></em>, <em class="sig-param"><span class="n">startValues</span></em>, <em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesTreeModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#fmpy.gui.model.VariablesModel" title="fmpy.gui.model.VariablesModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">fmpy.gui.model.VariablesModel</span></code></a></p>
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTreeModel.data">
+<code class="sig-name descname">data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em>, <em class="sig-param"><span class="n">role</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">Qt.DisplayRole</span></em><span class="sig-paren">)</span> &#x2192; Any<a class="headerlink" href="#fmpy.gui.model.VariablesTreeModel.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">VariablesTreeModel.index(self, int, int, parent: QModelIndex = QModelIndex()) -&gt; QModelIndex</code></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTreeModel.parent">
+<code class="sig-name descname">parent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">QModelIndex</span></em><span class="sig-paren">)</span> &#x2192; QModelIndex<a class="headerlink" href="#fmpy.gui.model.VariablesTreeModel.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>parent(self) -&gt; QObject</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTreeModel.rowCount">
+<code class="sig-name descname">rowCount</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">parent</span><span class="p">:</span> <span class="n">QModelIndex</span> <span class="o">=</span> <span class="default_value">QModelIndex()</span></em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#fmpy.gui.model.VariablesTreeModel.rowCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTreeModel.setModelDescription">
+<code class="sig-name descname">setModelDescription</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">md</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesTreeModel.setModelDescription" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.model.VariablesTreeModel.variableForIndex">
+<code class="sig-name descname">variableForIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.model.VariablesTreeModel.variableForIndex" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.gui.simulation">
+<span id="fmpy-gui-simulation-module"></span><h2>fmpy.gui.simulation module<a class="headerlink" href="#module-fmpy.gui.simulation" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="fmpy.gui.simulation.SimulationThread">
+<em class="property">class </em><code class="sig-prename descclassname">fmpy.gui.simulation.</code><code class="sig-name descname">SimulationThread</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">fmiType</span></em>, <em class="sig-param"><span class="n">stopTime</span></em>, <em class="sig-param"><span class="n">solver</span></em>, <em class="sig-param"><span class="n">stepSize</span></em>, <em class="sig-param"><span class="n">relativeTolerance</span></em>, <em class="sig-param"><span class="n">outputInterval</span></em>, <em class="sig-param"><span class="n">startValues</span></em>, <em class="sig-param"><span class="n">applyDefaultStartValues</span></em>, <em class="sig-param"><span class="n">input</span></em>, <em class="sig-param"><span class="n">output</span></em>, <em class="sig-param"><span class="n">debugLogging</span></em>, <em class="sig-param"><span class="n">fmiLogging</span></em>, <em class="sig-param"><span class="n">parent</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.simulation.SimulationThread" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">PyQt5.QtCore.QThread</span></code></p>
+<dl class="py method">
+<dt id="fmpy.gui.simulation.SimulationThread.logFMICall">
+<code class="sig-name descname">logFMICall</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.simulation.SimulationThread.logFMICall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.simulation.SimulationThread.logFMUMessage">
+<code class="sig-name descname">logFMUMessage</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">componentEnvironment</span></em>, <em class="sig-param"><span class="n">instanceName</span></em>, <em class="sig-param"><span class="n">status</span></em>, <em class="sig-param"><span class="n">category</span></em>, <em class="sig-param"><span class="n">message</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.simulation.SimulationThread.logFMUMessage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.simulation.SimulationThread.messageChanged">
+<code class="sig-name descname">messageChanged</code><a class="headerlink" href="#fmpy.gui.simulation.SimulationThread.messageChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="fmpy.gui.simulation.SimulationThread.progressChanged">
+<code class="sig-name descname">progressChanged</code><a class="headerlink" href="#fmpy.gui.simulation.SimulationThread.progressChanged" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.simulation.SimulationThread.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.simulation.SimulationThread.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.simulation.SimulationThread.stepFinished">
+<code class="sig-name descname">stepFinished</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">time</span></em>, <em class="sig-param"><span class="n">recorder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.simulation.SimulationThread.stepFinished" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fmpy.gui.simulation.SimulationThread.stop">
+<code class="sig-name descname">stop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.simulation.SimulationThread.stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.gui">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-fmpy.gui" title="Permalink to this headline">¶</a></h2>
+<p>This package contains the graphical user interface based on PyQt5</p>
+<dl class="py function">
+<dt id="fmpy.gui.compile_resources">
+<code class="sig-prename descclassname">fmpy.gui.</code><code class="sig-name descname">compile_resources</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.gui.compile_resources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compile the .ui and .qrc files if they are available and newer than the compiled .py files</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">FMPy documentation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Dassault Systems.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/fmpy.gui.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

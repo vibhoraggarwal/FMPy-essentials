@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fmpy.cross_check package &#8212; FMPy documentation 2021 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="fmpy-cross-check-package">
+<h1>fmpy.cross_check package<a class="headerlink" href="#fmpy-cross-check-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-fmpy.cross_check.cross_check">
+<span id="fmpy-cross-check-cross-check-module"></span><h2>fmpy.cross_check.cross_check module<a class="headerlink" href="#module-fmpy.cross_check.cross_check" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="fmpy.cross_check.cross_check.cross_check">
+<code class="sig-prename descclassname">fmpy.cross_check.cross_check.</code><code class="sig-name descname">cross_check</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fmus_dir</span></em>, <em class="sig-param"><span class="n">report</span></em>, <em class="sig-param"><span class="n">result_dir</span></em>, <em class="sig-param"><span class="n">simulate</span></em>, <em class="sig-param"><span class="n">tool_name</span></em>, <em class="sig-param"><span class="n">tool_version</span></em>, <em class="sig-param"><span class="n">skip</span></em>, <em class="sig-param"><span class="n">readme</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.cross_check.cross_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.cross_check.result_tables">
+<span id="fmpy-cross-check-result-tables-module"></span><h2>fmpy.cross_check.result_tables module<a class="headerlink" href="#module-fmpy.cross_check.result_tables" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="fmpy.cross_check.result_tables.generate_result_tables">
+<code class="sig-prename descclassname">fmpy.cross_check.result_tables.</code><code class="sig-name descname">generate_result_tables</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">repo_dir</span></em>, <em class="sig-param"><span class="n">data_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.result_tables.generate_result_tables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the cross-check result tables</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.cross_check.validate_vendor_repo">
+<span id="fmpy-cross-check-validate-vendor-repo-module"></span><h2>fmpy.cross_check.validate_vendor_repo module<a class="headerlink" href="#module-fmpy.cross_check.validate_vendor_repo" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="fmpy.cross_check.validate_vendor_repo.read_csv">
+<code class="sig-prename descclassname">fmpy.cross_check.validate_vendor_repo.</code><code class="sig-name descname">read_csv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">variable_names</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.validate_vendor_repo.read_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read a CSV file that conforms to the FMI cross-check rules</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>filename         name of the CSV file to read
+variable_names   list of legal variable names</p>
+</dd>
+<dt>Returns:</dt><dd><p>traj             the trajectoies read from the CSV file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.cross_check.validate_vendor_repo.segments">
+<code class="sig-prename descclassname">fmpy.cross_check.validate_vendor_repo.</code><code class="sig-name descname">segments</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.validate_vendor_repo.segments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Split a path into segments</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.cross_check.validate_vendor_repo.validate_cross_check_result">
+<code class="sig-prename descclassname">fmpy.cross_check.validate_vendor_repo.</code><code class="sig-name descname">validate_cross_check_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.validate_vendor_repo.validate_cross_check_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate a cross-check result</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>result_dir  path to the directory that contains the results</p>
+</dd>
+<dt>Returns:</dt><dd><p>a list of problems</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.cross_check.validate_vendor_repo.validate_repo">
+<code class="sig-prename descclassname">fmpy.cross_check.validate_vendor_repo.</code><code class="sig-name descname">validate_repo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vendor_dir</span></em>, <em class="sig-param"><span class="n">clean_up</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.validate_vendor_repo.validate_repo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.cross_check.validate_vendor_repo.validate_test_fmu">
+<code class="sig-prename descclassname">fmpy.cross_check.validate_vendor_repo.</code><code class="sig-name descname">validate_test_fmu</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.validate_vendor_repo.validate_test_fmu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate an exported FMU</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>model_dir  path to the directory that contains the exported FMU</p>
+</dd>
+<dt>Returns:</dt><dd><p>a list of problems</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-fmpy.cross_check">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-fmpy.cross_check" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="fmpy.cross_check.get_vendor_ids">
+<code class="sig-prename descclassname">fmpy.cross_check.</code><code class="sig-name descname">get_vendor_ids</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tools_csv</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.get_vendor_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get vendor and tool info from tools.csv</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>tools_csv  path to the _data/tools.csv in the fmi-standard.org repository</p>
+</dd>
+<dt>Returns:</dt><dd><p>a dictionary {vendor_id: (tool_id, tool_name)}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.cross_check.validate_result">
+<code class="sig-prename descclassname">fmpy.cross_check.</code><code class="sig-name descname">validate_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">result</span></em>, <em class="sig-param"><span class="n">reference</span></em>, <em class="sig-param"><span class="n">t_start</span></em>, <em class="sig-param"><span class="n">t_stop</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.validate_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate a simulation result against a reference result</p>
+<dl class="simple">
+<dt>Parameters:</dt><dd><p>result      structured NumPy array where the first column is the time
+reference   same as result
+…</p>
+</dd>
+<dt>Returns:</dt><dd><p>problems    a list of problems</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fmpy.cross_check.validate_signal">
+<code class="sig-prename descclassname">fmpy.cross_check.</code><code class="sig-name descname">validate_signal</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">t</span></em>, <em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">t_ref</span></em>, <em class="sig-param"><span class="n">y_ref</span></em>, <em class="sig-param"><span class="n">t_start</span></em>, <em class="sig-param"><span class="n">t_stop</span></em>, <em class="sig-param"><span class="n">num</span><span class="o">=</span><span class="default_value">1000</span></em>, <em class="sig-param"><span class="n">dx</span><span class="o">=</span><span class="default_value">21</span></em>, <em class="sig-param"><span class="n">dy</span><span class="o">=</span><span class="default_value">0.1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fmpy.cross_check.validate_signal" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate a signal y(t) against a reference signal y_ref(t_ref) by creating a band
+around y_ref and finding the values in y outside the band</p>
+<p>Parameters:</p>
+<blockquote>
+<div><p>t        time of the signal
+y        values of the signal
+t_ref    time of the reference signal
+y_ref    values of the reference signal
+t_start  start time of the band
+t_stop   stop time of the band
+num      number of samples for the band
+dx       horizontal tolerance in samples
+dy       relative vertical tolerance</p>
+</div></blockquote>
+<p>Returns:</p>
+<blockquote>
+<div><p>t_band  time values of the band
+y_min   lower limit of the band
+y_max   upper limit of the band
+i_out   indices of the outliers in y</p>
+</div></blockquote>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">FMPy documentation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Dassault Systems.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.4.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/fmpy.cross_check.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
